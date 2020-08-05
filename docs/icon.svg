@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="800"
+   viewBox="0 0 211.66666 211.66667"
+   version="1.1"
+   id="svg3791"
+   inkscape:export-filename="/home/leroy/projects/space-station-nix/icon.png"
+   inkscape:export-xdpi="7.6799998"
+   inkscape:export-ydpi="7.6799998"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs3785" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-269.89681"
+     inkscape:cy="691.92723"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-page="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3788">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-85.333317)">
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.38909388;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect4634"
+       width="211.66667"
+       height="105.83318"
+       x="0"
+       y="191.16679"
+       ry="0" />
+    <rect
+       ry="0"
+       y="85.333321"
+       x="0"
+       height="105.83347"
+       width="211.66701"
+       id="rect4640"
+       style="fill:#4f72bb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.38910723;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3793"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;line-height:1.25;font-family:'Grotesque Becker';-inkscape-font-specification:'Grotesque Becker';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion3795"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Grotesque Becker';-inkscape-font-specification:'Grotesque Becker'"><rect
+           id="rect3797"
+           width="608.57141"
+           height="240"
+           x="80"
+           y="396.80539"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Grotesque Becker';-inkscape-font-specification:'Grotesque Becker'" /></flowRegion><flowPara
+         id="flowPara3799" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:118.22099304px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.96875;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="35.69735"
+       y="283.48077"
+       id="text3827"><tspan
+         sodipodi:role="line"
+         id="tspan3825"
+         x="35.69735"
+         y="283.48077"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Grotesque Becker';-inkscape-font-specification:'Grotesque Becker';fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.96875;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">NIX</tspan></text>
+    <text
+       id="text4648"
+       y="177.38766"
+       x="53.852055"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:118.22099304px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.96875;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Grotesque Becker';-inkscape-font-specification:'Grotesque Becker';fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.96875;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="177.38766"
+         x="53.852055"
+         id="tspan4646"
+         sodipodi:role="line">SS</tspan></text>
+  </g>
+</svg>
