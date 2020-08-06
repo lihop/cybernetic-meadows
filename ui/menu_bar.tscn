@@ -1,0 +1,109 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/in_game_ui.gd" type="Script" id=1]
+[ext_resource path="res://ui/architect/architect_submenu.tscn" type="PackedScene" id=2]
+
+[node name="InGameUI" type="VBoxContainer"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -20.0
+grow_vertical = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArchitectSubMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_top = 0.0
+margin_bottom = 20.0
+
+[node name="MenuBar" type="HBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Architect" type="Button" parent="MenuBar"]
+margin_right = 98.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+toggle_mode = true
+text = "Architect"
+
+[node name="Work" type="MenuButton" parent="MenuBar"]
+margin_left = 102.0
+margin_right = 200.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Work"
+flat = false
+
+[node name="Restrict" type="MenuButton" parent="MenuBar"]
+margin_left = 204.0
+margin_right = 302.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Restrict"
+flat = false
+
+[node name="Assign" type="MenuButton" parent="MenuBar"]
+margin_left = 306.0
+margin_right = 404.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Assign"
+flat = false
+
+[node name="Wildlife" type="MenuButton" parent="MenuBar"]
+margin_left = 408.0
+margin_right = 506.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Wildlife"
+flat = false
+
+[node name="Research" type="MenuButton" parent="MenuBar"]
+margin_left = 510.0
+margin_right = 608.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Research"
+flat = false
+
+[node name="World" type="MenuButton" parent="MenuBar"]
+margin_left = 612.0
+margin_right = 710.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "World"
+flat = false
+
+[node name="History" type="MenuButton" parent="MenuBar"]
+margin_left = 714.0
+margin_right = 812.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "History"
+flat = false
+
+[node name="Factions" type="MenuButton" parent="MenuBar"]
+margin_left = 816.0
+margin_right = 914.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Factions"
+flat = false
+
+[node name="Menu" type="MenuButton" parent="MenuBar"]
+margin_left = 918.0
+margin_right = 1024.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Menu"
+flat = false
+[connection signal="toggled" from="MenuBar/Architect" to="." method="_on_Architect_toggled"]

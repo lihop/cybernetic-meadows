@@ -23,7 +23,6 @@ func move_along_path(distance: float) -> void:
 			if angle < 0:
 				angle += 2 * PI
 			var direction = int(round(angle / PI * 4))
-			print(direction)
 			match direction:
 				3, 4, 5:
 					frame = 3
