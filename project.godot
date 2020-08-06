@@ -8,14 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Camera2D",
+"class": "CameraMovement",
+"language": "GDScript",
+"path": "res://ui/camera/camera_movement.gd"
+} ]
 _global_script_class_icons={
-
+"CameraMovement": ""
 }
 
 [application]
 
 config/name="Space Station Nix"
+run/main_scene="res://scenarios/upgraded.tscn"
 config/icon="res://icon.png"
 
 [rendering]

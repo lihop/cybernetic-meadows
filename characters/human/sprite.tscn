@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://characters/common/images/sprites.svg" type="Texture" id=1]
+[ext_resource path="res://characters/common/scripts/character.gd" type="Script" id=2]
+
+[node name="Character" type="Sprite"]
+texture = ExtResource( 1 )
+hframes = 4
+script = ExtResource( 2 )
