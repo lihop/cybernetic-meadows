@@ -42,6 +42,10 @@ config/name="Space Station Nix"
 run/main_scene="res://scenarios/upgraded.tscn"
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "godot-behavior-tree-plugin" )
+
 [input]
 
 rotate_right={
