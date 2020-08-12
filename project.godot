@@ -38,7 +38,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Space Station Nix"
+config/name="Cybernetic Meadows"
 run/main_scene="res://scenarios/upgraded.tscn"
 config/icon="res://icon.png"
 
