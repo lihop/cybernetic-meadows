@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/521973__kastenfrosch__error.wav-4f3db17c1cd44726dc0dcce4353e4e68.sample"
+
+[deps]
+
+source_file="res://ui/in_game/floating_label/assets/521973__kastenfrosch__error.wav"
+dest_files=[ "res://.import/521973__kastenfrosch__error.wav-4f3db17c1cd44726dc0dcce4353e4e68.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0

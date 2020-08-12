@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ui/in_game/thing_frame/spriteframes.tres" type="SpriteFrames" id=1]
+
+[node name="FrameCorner" type="AnimatedSprite"]
+frames = ExtResource( 1 )
+animation = "New Anim"
+centered = false
+offset = Vector2( -2, -2 )

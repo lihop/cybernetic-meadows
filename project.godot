@@ -19,10 +19,50 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://ui/camera/camera_movement.gd"
 }, {
-"base": "Resource",
-"class": "ObjectResource",
+"base": "Thing",
+"class": "Electronic",
 "language": "GDScript",
-"path": "res://objects/object_stats.gd"
+"path": "res://things/electronics/electronic.gd"
+}, {
+"base": "Electronic",
+"class": "Generator",
+"language": "GDScript",
+"path": "res://things/electronics/generators/generator.gd"
+}, {
+"base": "Node",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://characters/player/scripts/inventory.gd"
+}, {
+"base": "Thing",
+"class": "NaturalResource",
+"language": "GDScript",
+"path": "res://things/natural_resources/natural_resource.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://characters/player/player.gd"
+}, {
+"base": "Thing",
+"class": "RawMaterial",
+"language": "GDScript",
+"path": "res://things/raw_materials/raw_material.gd"
+}, {
+"base": "Node2D",
+"class": "Thing",
+"language": "GDScript",
+"path": "res://things/thing.gd"
+}, {
+"base": "Node2D",
+"class": "ThingFrame",
+"language": "GDScript",
+"path": "res://ui/in_game/thing_frame/thing_frame.gd"
+}, {
+"base": "RawMaterial",
+"class": "Wood",
+"language": "GDScript",
+"path": "res://things/raw_materials/wood/wood.gd"
 }, {
 "base": "Architecture",
 "class": "power",
@@ -32,7 +72,15 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Architecture": "",
 "CameraMovement": "",
-"ObjectResource": "",
+"Electronic": "",
+"Generator": "",
+"Inventory": "",
+"NaturalResource": "",
+"Player": "",
+"RawMaterial": "",
+"Thing": "",
+"ThingFrame": "",
+"Wood": "",
 "power": ""
 }
 
@@ -78,7 +126,24 @@ move_right={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
  ]
 }
+toggle_inventory={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":46,"unicode":0,"echo":false,"script":null)
+ ]
+}
+interact={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_physics/layer_1="high_structures"
+2d_physics/layer_2="low_structures"
+2d_physics/layer_3="other"
 
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

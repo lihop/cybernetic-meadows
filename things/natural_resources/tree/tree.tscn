@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://things/natural_resources/tree/tree.gd" type="Script" id=1]
+[ext_resource path="res://things/raw_materials/wood/wood.tscn" type="PackedScene" id=2]
+[ext_resource path="res://things/natural_resources/tree/assets/tree.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 64 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="Tree" type="Node2D"]
+script = ExtResource( 1 )
+pollution_per_second = -0.001
+raw_material = ExtResource( 2 )
+max_units = 4
+extraction_effort = 0.5
+units_per_yield = 4
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 32, 56 )
+scale = Vector2( 0.96, 1 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 32, 56 )
+scale = Vector2( 0.96, 1 )
+polygon = PoolVector2Array( -4.51805, 16.371, 3.35082, 16.4096, 16.6667, 64, -18.1452, 64.2301 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 32, 64 )
+shape = SubResource( 1 )
+
+[node name="ReachArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReachArea"]
+position = Vector2( 32, 104 )
+shape = SubResource( 2 )
+[connection signal="depleted" from="." to="." method="_on_Tree_depleted"]

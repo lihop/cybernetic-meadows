@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/in_game/inventory/inventory.gd" type="Script" id=1]
+[ext_resource path="res://ui/in_game/inventory/inventory/inventory.tscn" type="PackedScene" id=2]
+
+[node name="Control" type="WindowDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -224.0
+margin_bottom = -210.0
+rect_min_size = Vector2( 800, 390 )
+window_title = "Inventory and Crafting"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 800.0
+margin_bottom = 390.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" parent="HBoxContainer" instance=ExtResource( 2 )]
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 402.0
+margin_right = 800.0
+margin_bottom = 390.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+margin_right = 398.0
+margin_bottom = 14.0
+text = "Crafting"

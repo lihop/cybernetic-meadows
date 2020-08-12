@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/topdown_shooter.png-f90c13142032fe5ce78995565884d848.stex"
+path="res://.import/frame_corner_within_reach.png-617c7d28dd55ab3532b4aba5aa6039a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/images/topdown_shooter.png"
-dest_files=[ "res://.import/topdown_shooter.png-f90c13142032fe5ce78995565884d848.stex" ]
+source_file="res://ui/in_game/thing_frame/assets/frame_corner_within_reach.png"
+dest_files=[ "res://.import/frame_corner_within_reach.png-617c7d28dd55ab3532b4aba5aa6039a9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

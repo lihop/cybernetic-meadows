@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sprite_template.svg-6cf080ce43e965d2e722a74f9accf66a.stex"
+path="res://.import/tree.png-225bc6f3466706004907a453277e9612.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://common/images/sprite_template.svg"
-dest_files=[ "res://.import/sprite_template.svg-6cf080ce43e965d2e722a74f9accf66a.stex" ]
+source_file="res://things/natural_resources/tree/assets/tree.png"
+dest_files=[ "res://.import/tree.png-225bc6f3466706004907a453277e9612.stex" ]
 
 [params]
 
