@@ -12,6 +12,10 @@
 
 [node name="World" type="Node2D"]
 
+[node name="ItemTileMap" type="TileMap" parent="."]
+cell_size = Vector2( 16, 16 )
+format = 1
+
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 10000000
 limit_top = 10000000

@@ -54,3 +54,7 @@ func _process(delta):
 				$"/root/World".add_child(floating_label)
 				
 				inventory.add_item(units[0], units.size())
+		
+		if target is RawMaterial:
+			inventory.add_item(target)
+			target.queue_free()

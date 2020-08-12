@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://characters/common/images/sprites.svg" type="Texture" id=1]
 [ext_resource path="res://characters/player/player.gd" type="Script" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://characters/player/player_ui.gd" type="Script" id=4]
 [ext_resource path="res://characters/player/scripts/inventory.gd" type="Script" id=6]
 [ext_resource path="res://ui/in_game/inventory/inventory.gd" type="Script" id=7]
-[ext_resource path="res://ui/in_game/inventory/inventory/inventory.gd" type="Script" id=8]
 [ext_resource path="res://ui/in_game/inventory/inventory/inventory.tscn" type="PackedScene" id=9]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -50,14 +49,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Inventory" type="VBoxContainer" parent="UI/InventoryCraftingDialog/HBoxContainer" instance=ExtResource( 9 )]
-margin_right = 398.0
-margin_bottom = 390.0
-size_flags_horizontal = 3
-script = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Inventory" parent="UI/InventoryCraftingDialog/HBoxContainer" instance=ExtResource( 9 )]
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="UI/InventoryCraftingDialog/HBoxContainer"]
 margin_left = 402.0

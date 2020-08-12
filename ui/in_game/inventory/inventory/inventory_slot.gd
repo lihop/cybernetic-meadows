@@ -1,6 +1,7 @@
 extends TextureButton
 class_name InventorySlot
 
+signal amount_changed(new_amount)
 
 var thing: Item = null setget set_thing
 var item: Item = null setget set_item
@@ -11,6 +12,21 @@ var type: String
 
 var _style = StyleBoxFlat.new()
 var _blinking := true
+var equipped := false setget set_equipped
+
+
+func set_equipped(is_equipped: bool) -> void:
+	equipped = is_equipped
+	if equipped:
+		$AmountLabel.hide()
+		$Icon.texture = load("res://ui/in_game/inventory/inventory/assets/hand.png")
+	else:
+		$AmountLabel.show()
+		$Icon.texture = item.icon
+
+
+func _ready():
+	set_process(false)
 
 
 # Deprecated
@@ -37,9 +53,8 @@ func set_amount(new_amount):
 		$AmountLabel.visible = true
 		$AmountLabel.text = str(amount)
 	
-#	if new_amount > old_amount:
-#		blink()
-#	blink()
+	if old_amount != new_amount:
+		emit_signal("amount_changed", new_amount)
 
 
 func blink():
@@ -52,7 +67,5 @@ func blink():
 
 
 func _process(delta):
-	if _blinking:
-		var color = Color(0.5*sin(OS.get_ticks_msec()/100.0)+0.5, 0, 0)
-		_style.set_bg_color(color)
-		update()
+	if equipped:
+		set_global_position(get_global_mouse_position())

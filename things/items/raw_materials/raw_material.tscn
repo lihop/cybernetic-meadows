@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://things/items/raw_materials/raw_material.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="RawMaterial" type="Node2D"]
+script = ExtResource( 1 )
+area_node = NodePath("Area2D")
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 16, 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="ReachArea" type="Area2D" parent="."]
+position = Vector2( 16, 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReachArea"]
+shape = SubResource( 2 )
