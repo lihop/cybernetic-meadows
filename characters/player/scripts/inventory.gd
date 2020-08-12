@@ -1,5 +1,4 @@
 extends Node
-class_name Inventory
 
 
 # Emitted when an inventory slot is updated. For example, the amount changed
@@ -16,7 +15,7 @@ var slots := []
 func _ready():
 	slots.resize(num_slots)
 	for i in range(num_slots):
-		slots[i] = InventorySlot.new()
+		slots[i] = load("res://ui/in_game/inventory/inventory/inventory_slot.tscn").instance()
 		slots[i].number = i
 	emit_signal("inventory_updated")
 
@@ -40,10 +39,16 @@ func add(type: String, amount: int):
 			return
 
 
-class InventorySlot:
-	extends Node
+func add_item(item: Item, amount: int = 1):
+	for slot in slots:
+		if slot.item and slot.item.get_class() == item.get_class():
+			slot.amount += amount
+			emit_signal("slot_updated", slot.number)
+			return
 	
-	var number: int
-	var type: String
-	var amount := 0
-	var icon = null
+	for slot in slots:
+		if slot.amount == 0:
+			slot.item = item
+			slot.amount = amount
+			emit_signal("slot_updated", slot.number)
+			return

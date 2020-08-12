@@ -1,8 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://things/natural_resources/tree/tree.gd" type="Script" id=1]
-[ext_resource path="res://things/raw_materials/wood/wood.tscn" type="PackedScene" id=2]
+[ext_resource path="res://things/items/raw_materials/wood/wood.tscn" type="PackedScene" id=2]
 [ext_resource path="res://things/natural_resources/tree/assets/tree.png" type="Texture" id=3]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 64 )

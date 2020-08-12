@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://things/items/raw_materials/wood/wood.gd" type="Script" id=1]
+[ext_resource path="res://things/items/raw_materials/wood/assets/wood_icon.svg" type="Texture" id=2]
+
+[node name="Wood" type="Node2D"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )

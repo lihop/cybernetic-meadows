@@ -4,9 +4,12 @@ class_name Player
 const FloatingLabel = preload("res://ui/in_game/floating_label/floating_label.tscn")
 
 export(int) var speed := 400
+export(NodePath) var inventory_node
 
 var velocity = Vector2()
 var target: Thing = null
+
+onready var inventory = get_node(inventory_node)
 
 
 func get_input():
@@ -50,4 +53,4 @@ func _process(delta):
 				floating_label.global_position = get_global_mouse_position()
 				$"/root/World".add_child(floating_label)
 				
-				$Inventory.add(units[0].get_class(), units.size())
+				inventory.add_item(units[0], units.size())

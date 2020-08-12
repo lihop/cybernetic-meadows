@@ -1,4 +1,4 @@
-extends Thing
+extends Item
 class_name RawMaterial
 
 

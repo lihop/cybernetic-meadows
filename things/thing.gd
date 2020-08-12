@@ -18,7 +18,7 @@ export(Color) var map_color := Color()
 # and interact with the thing on mouse click.
 export(NodePath) var area_node
 # The radius of the area the player must be within to interact with the thing.
-export(int) var reach_area_radius := 150
+export(int) var reach_area_radius := 150 
 
 var health := max_health
 

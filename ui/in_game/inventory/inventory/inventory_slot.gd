@@ -1,19 +1,29 @@
-extends Panel
+extends TextureButton
+class_name InventorySlot
 
 
-var thing: Thing = null setget set_thing
+var thing: Item = null setget set_thing
+var item: Item = null setget set_item
 var amount := 0 setget set_amount
 var icon
+var number: int
+var type: String
 
 var _style = StyleBoxFlat.new()
 var _blinking := true
 
 
+# Deprecated
 func set_thing(new_thing):
-	thing = new_thing
-	
-	if new_thing != null:
-		blink()
+	thing = new_thing # Deprecated
+	$Icon.texture = thing.icon
+	print('setting thing')
+
+
+func set_item(new_item: Item) -> void:
+	print('setting item')
+	item = new_item
+	$Icon.texture = item.icon
 
 
 func set_amount(new_amount):
@@ -27,9 +37,9 @@ func set_amount(new_amount):
 		$AmountLabel.visible = true
 		$AmountLabel.text = str(amount)
 	
-	if new_amount > old_amount:
-		blink()
-	blink()
+#	if new_amount > old_amount:
+#		blink()
+#	blink()
 
 
 func blink():
