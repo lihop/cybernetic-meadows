@@ -9,6 +9,8 @@
 [ext_resource path="res://ui/in_game/inventory/inventory/inventory.tscn" type="PackedScene" id=9]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 8
+collision_mask = 3
 script = ExtResource( 2 )
 inventory_node = NodePath("UI/InventoryCraftingDialog/HBoxContainer/Inventory")
 

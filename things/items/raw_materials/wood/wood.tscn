@@ -8,6 +8,3 @@
 script = ExtResource( 1 )
 icon = ExtResource( 3 )
 type = "Wood"
-
-[node name="CollisionShape2D" parent="Area2D" index="0"]
-position = Vector2( 8, 8 )

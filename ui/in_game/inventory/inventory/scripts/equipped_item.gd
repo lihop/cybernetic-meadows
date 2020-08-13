@@ -28,7 +28,26 @@ func _process(_delta):
 		$"/root/World".add_child(dropped_item)
 		var tile: Vector2 = $"/root/World/TileMap".world_to_map(
 					$"/root/World/TileMap".get_global_mouse_position())
-		dropped_item.position = $"/root/World/TileMap".map_to_world(tile)
+		var origin: Vector2 = $"/root/World/TileMap".map_to_world(tile)
+		var target := origin
+		var space_state := get_world_2d().direct_space_state
+		var collisions: Array = space_state.intersect_point(target)
+		var i = Vector2.ZERO
+		print(collisions)
+		while not collisions.empty():
+			i += Vector2(32, 32)
+			for direction in [Vector2.UP, Vector2.DOWN, Vector2.LEFT,
+					Vector2.RIGHT, Vector2.UP + Vector2.LEFT,
+					Vector2.UP + Vector2.RIGHT, Vector2.DOWN + Vector2.LEFT,
+					Vector2.DOWN + Vector2.RIGHT]:
+				target = origin + direction * i
+				print(target)
+				collisions = space_state.intersect_point(target)
+				print(collisions)
+				if collisions.empty():
+					break
+		dropped_item.global_position = target
+			
 		print(get_global_mouse_position())
 		slot.amount -= 1
 		if slot.amount == 0:
