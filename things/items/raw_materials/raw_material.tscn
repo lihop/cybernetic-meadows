@@ -26,10 +26,10 @@ position = Vector2( 16, 16 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
 
-[node name="ReachArea" type="Area2D" parent="."]
+[node name="Reach" type="Area2D" parent="."]
 position = Vector2( 16, 16 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ReachArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reach"]
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
