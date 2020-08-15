@@ -9,11 +9,6 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node2D",
-"class": "Architecture",
-"language": "GDScript",
-"path": "res://architecture/architecture.gd"
-}, {
 "base": "Node",
 "class": "Battery",
 "language": "GDScript",
@@ -153,14 +148,8 @@ _global_script_classes=[ {
 "class": "WoodenStorageChest",
 "language": "GDScript",
 "path": "res://things/items/craftables/storage/wooden_storage_chest/wooden_storage_chest.gd"
-}, {
-"base": "Architecture",
-"class": "power",
-"language": "GDScript",
-"path": "res://architecture/power/power.gd"
 } ]
 _global_script_class_icons={
-"Architecture": "",
 "Battery": "",
 "Conduit": "",
 "Craftable": "",
@@ -188,8 +177,7 @@ _global_script_class_icons={
 "ThingFrame": "",
 "Transport": "",
 "Wood": "",
-"WoodenStorageChest": "",
-"power": ""
+"WoodenStorageChest": ""
 }
 
 [application]
