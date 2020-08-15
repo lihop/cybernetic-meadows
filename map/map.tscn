@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://map/tiles/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://ui/camera/player_camera.gd" type="Script" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="PlayerCamera" type="Camera2D" parent="."]
+current = true
+script = ExtResource( 2 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Navigation2D"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 32
+format = 1
+
+[node name="Things" type="YSort" parent="."]
