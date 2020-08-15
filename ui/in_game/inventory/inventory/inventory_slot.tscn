@@ -9,7 +9,6 @@
 margin_right = 35.0
 margin_bottom = 35.0
 rect_min_size = Vector2( 35, 35 )
-rect_scale = Vector2( 0.333, 0.333 )
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
@@ -21,7 +20,7 @@ __meta__ = {
 [node name="Icon" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-stretch_mode = 1
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

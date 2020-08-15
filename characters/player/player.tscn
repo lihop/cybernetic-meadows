@@ -246,8 +246,6 @@ rotation = -1.5708
 shape = SubResource( 23 )
 
 [node name="UI" type="CanvasLayer" parent="."]
-scale = Vector2( 0.3, 0.3 )
-transform = Transform2D( 0.3, 0, 0, 0.3, 0, 0 )
 script = ExtResource( 4 )
 
 [node name="InventoryCraftingDialog" type="WindowDialog" parent="UI"]
@@ -272,8 +270,6 @@ __meta__ = {
 }
 
 [node name="Inventory" parent="UI/InventoryCraftingDialog/HBoxContainer" instance=ExtResource( 3 )]
-margin_right = 398.0
-margin_bottom = 390.0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="UI/InventoryCraftingDialog/HBoxContainer"]
 margin_left = 402.0

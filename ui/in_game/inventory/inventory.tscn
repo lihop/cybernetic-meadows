@@ -6,9 +6,9 @@
 [node name="Control" type="WindowDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -374.0
-margin_bottom = -230.0
-rect_min_size = Vector2( 266, 130 )
+margin_right = -224.0
+margin_bottom = -210.0
+rect_min_size = Vector2( 800, 390 )
 window_title = "Inventory and Crafting"
 script = ExtResource( 1 )
 __meta__ = {
@@ -16,22 +16,21 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_right = 266.0
-margin_bottom = 130.0
+margin_right = 800.0
+margin_bottom = 390.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Inventory" parent="HBoxContainer" instance=ExtResource( 2 )]
-margin_right = 131.0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
-margin_left = 135.0
-margin_right = 266.0
-margin_bottom = 130.0
+margin_left = 402.0
+margin_right = 800.0
+margin_bottom = 390.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
-margin_right = 131.0
+margin_right = 398.0
 margin_bottom = 14.0
 text = "Crafting"
