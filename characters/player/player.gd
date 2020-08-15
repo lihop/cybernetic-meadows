@@ -46,7 +46,7 @@ func _process(delta):
 			floating_label.text = "Too far away!"
 			floating_label.error = true
 			floating_label.global_position = get_global_mouse_position()
-			$"/root/Map".add_child(floating_label)
+			$"/root/World".add_child(floating_label)
 	
 	elif target and Input.is_action_pressed("interact"):
 		if target is NaturalResource:
@@ -58,7 +58,7 @@ func _process(delta):
 				var floating_label = FloatingLabel.instance()
 				floating_label.text = "+%d wood (total)" % units.size()
 				floating_label.global_position = get_global_mouse_position()
-				$"/root/Map".add_child(floating_label)
+				$"/root/World".add_child(floating_label)
 				
 				inventory.add_item(units[0], units.size())
 		

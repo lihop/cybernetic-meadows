@@ -42,13 +42,13 @@ func _ready():
 
 func _on_Area2D_mouse_entered():
 	_frame.visible = true
-	$"/root/Map/Things/Player".target = self
+	$"/root/World/Things/Player".target = self
 
 
 func _on_Area2D_mouse_exited():
 	_frame.visible = false
-	if $"/root/Map/Things/Player".target == self:
-		$"/root/Map/Things/Player".target = null
+	if $"/root/World/Things/Player".target == self:
+		$"/root/World/Things/Player".target = null
 
 
 func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:

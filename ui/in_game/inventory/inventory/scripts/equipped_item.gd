@@ -25,10 +25,10 @@ func _process(_delta):
 	if Input.is_action_just_pressed("drop_item"):
 		# TODO: Create an instace of the item at mouse position.
 		var dropped_item: Wood = slot.item.duplicate()
-		$"/root/Map".add_child(dropped_item)
-		var tile: Vector2 = $"/root/Map/Navigation2D/TileMap".world_to_map(
-					$"/root/Map/Navigation2D/TileMap".get_global_mouse_position())
-		var origin: Vector2 = $"/root/Map/Navigation2D/TileMap".map_to_world(tile)
+		$"/root/World".add_child(dropped_item)
+		var tile: Vector2 = $"/root/World/Navigation2D/TileMap".world_to_map(
+					$"/root/World/Navigation2D/TileMap".get_global_mouse_position())
+		var origin: Vector2 = $"/root/World/Navigation2D/TileMap".map_to_world(tile)
 		var target := origin
 		var space_state := get_world_2d().direct_space_state
 		var collisions: Array = space_state.intersect_point(target)

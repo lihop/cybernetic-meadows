@@ -99,7 +99,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://nodes/environment/polluter/polluter.gd"
 }, {
-"base": "Thing",
+"base": "Node2D",
 "class": "Purifier",
 "language": "GDScript",
 "path": "res://nodes/environment/purifier/purifier.gd"
@@ -185,6 +185,10 @@ _global_script_class_icons={
 config/name="Cybernetic Meadows"
 run/main_scene="res://map/example_map.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Map="*res://singletons/map.gd"
 
 [display]
 
