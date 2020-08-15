@@ -23,6 +23,8 @@ func _ready():
 			shape = child.shape
 			break
 	
+	var origin: Vector2 = _thing.area.position - shape.extents
+	
 	var scale_factor = Vector2(1, 1)
 	var shortest_side = min(shape.extents.x, shape.extents.y)
 	print(shortest_side)
@@ -32,20 +34,20 @@ func _ready():
 			scale_factor = Vector2(0.25, 0.25)
 	
 	var top_left = corner.instance()
-	top_left.position = Vector2(0, 0)
+	top_left.position = origin
 	top_left.scale = scale_factor
 	add_child(top_left)
 	
 	var top_right = corner.instance()
 	top_right.position = Vector2(shape.extents.x + shape.extents.x * \
-			(1 - scale_factor.x), 0)
+			(1 - scale_factor.x), 0) + origin
 	top_right.flip_h = true
 	top_right.scale = scale_factor
 	add_child(top_right)
 	
 	var bottom_left = corner.instance()
 	bottom_left.position = Vector2(0, shape.extents.y + (shape.extents.y / 2) \
-			+ shape.extents.y * (1 - scale_factor.y) / 2)
+			+ shape.extents.y * (1 - scale_factor.y) / 2) + origin
 	bottom_left.flip_v = true
 	bottom_left.scale = scale_factor
 	add_child(bottom_left)
@@ -53,7 +55,7 @@ func _ready():
 	var bottom_right = corner.instance()
 	bottom_right.position = Vector2(shape.extents.x + shape.extents.x * \
 			(1 - scale_factor.x), shape.extents.y + (shape.extents.y / 2) \
-			+ shape.extents.y * (1 - scale_factor.y) / 2)
+			+ shape.extents.y * (1 - scale_factor.y) / 2) + origin
 	bottom_right.flip_v = true
 	bottom_right.flip_h = true
 	bottom_right.scale = scale_factor
