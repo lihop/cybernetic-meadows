@@ -4,7 +4,7 @@ extends NaturalResource
 # to extract wood.
 
 
-func _on_Tree_depleted():
+func _on_depleted():
 	# TODO: Change the sprite to show a tree stump.
 	# TODO: Change the footprint to removeable, meaning that if anything is
 	# placed on top of this node's tile, it will be deleted.

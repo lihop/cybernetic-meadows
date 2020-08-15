@@ -22,7 +22,7 @@ export(int) var reach_area_radius := 150
 
 var health := max_health
 
-onready var area: Area2D = get_node(area_node) if area_node else $Area2D
+onready var area: Area2D = get_node(area_node) if area_node else $Footprint
 
 var _frame: ThingFrame
 
@@ -30,11 +30,11 @@ var _frame: ThingFrame
 func _ready():
 	area.connect("mouse_entered", self, "_on_Area2D_mouse_entered")
 	area.connect("mouse_exited", self, "_on_Area2D_mouse_exited")
-	
-	$ReachArea/CollisionShape2D.shape.radius = reach_area_radius
-	$ReachArea.connect("body_exited", self, "_on_Area2D_body_exited")
-	$ReachArea.connect("body_entered", self, "_on_Area2D_body_entered")
-	
+
+	$Reach/CollisionShape2D.shape.radius = reach_area_radius
+	$Reach.connect("body_exited", self, "_on_Area2D_body_exited")
+	$Reach.connect("body_entered", self, "_on_Area2D_body_entered")
+
 	_frame = ThingFrame.new()
 	_frame.thing = get_path()
 	add_child(_frame)
@@ -42,25 +42,25 @@ func _ready():
 
 func _on_Area2D_mouse_entered():
 	_frame.visible = true
-	$"/root/World/Player".target = self
+	$"/root/ExampleMap/Things/Player".target = self
 
 
 func _on_Area2D_mouse_exited():
 	_frame.visible = false
-	if $"/root/World/Player".target == self:
-		$"/root/World/Player".target = null
+	if $"/root/ExampleMap/Things/Player".target == self:
+		$"/root/ExampleMap/Things/Player".target = null
 
 
 func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
-	if body == $"/root/World/Player":
+	if body.is_in_group("players"):
 		_frame.within_reach = true
 
 
 func _on_Area2D_body_exited(body: PhysicsBody2D) -> void:
-	if body == $"/root/World/Player":
+	if body.is_in_group("players"):
 		_frame.within_reach = false
 
 
 # Returns true if body is touching the reach area of the thing.
 func in_reach_of(body: PhysicsBody2D):
-	return $ReachArea.get_overlapping_bodies().has(body)
+	return $Reach.get_overlapping_bodies().has(body)

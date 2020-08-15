@@ -21,6 +21,10 @@ onready var units := max_units
 onready var _next_yield := extraction_effort
 
 
+func _ready():
+	connect("depleted", self, "_on_depleted")
+
+
 func extract(effort: float) -> Array:
 	print('effort: ', effort)
 	print('_next_yield', _next_yield)
