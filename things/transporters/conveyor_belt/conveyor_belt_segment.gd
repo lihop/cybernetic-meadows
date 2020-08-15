@@ -21,7 +21,8 @@ func _process(delta):
 		if body is KinematicBody2D:
 			body.move_and_slide(Vector2(200, 0), Vector2.UP)
 		elif body is RigidBody2D:
-			print("what to do?")
+			print(body.get_class())
+			body.set_linear_velocity(Vector2(200, 0))
 
 
 func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
@@ -30,3 +31,5 @@ func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
 
 func _on_Area2D_body_exited(body: PhysicsBody2D) -> void:
 	_passengers.erase(body.get_instance_id())
+	if body is RigidBody2D:
+		body.set_linear_velocity(Vector2.ZERO)
