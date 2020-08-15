@@ -1,0 +1,1 @@
+spritesheet_characters.svg, from https://www.kenney.nl/assets/topdown-shooter by Kenney, released under CC-0
