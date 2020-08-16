@@ -1,2 +1,0 @@
-extends Storage
-class_name WoodenStorageChest

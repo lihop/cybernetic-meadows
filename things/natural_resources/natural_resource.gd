@@ -26,6 +26,7 @@ func _ready():
 
 
 func extract(effort: float) -> Array:
+	push_error("Deprecated. Use an Extractable node instead!")
 	print('effort: ', effort)
 	print('_next_yield', _next_yield)
 	var result := []

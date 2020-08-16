@@ -24,7 +24,7 @@ func _process(_delta):
 	
 	if Input.is_action_just_pressed("drop_item"):
 		# TODO: Create an instace of the item at mouse position.
-		var dropped_item: Wood = slot.item.duplicate()
+		var dropped_item: Item2D = load(slot.item.scene_path).instance()
 		$"/root/World".add_child(dropped_item)
 		var tile: Vector2 = $"/root/World/Navigation2D/TileMap".world_to_map(
 					$"/root/World/Navigation2D/TileMap".get_global_mouse_position())

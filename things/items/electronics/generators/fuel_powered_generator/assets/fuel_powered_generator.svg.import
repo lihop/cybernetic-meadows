@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tree.svg-fb1800687532d73fc873f924726336d2.stex"
+path="res://.import/fuel_powered_generator.svg-b843437c5d7c4066c8c6531bc7f2ee4e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://things/natural_resources/tree/assets/tree.svg"
-dest_files=[ "res://.import/tree.svg-fb1800687532d73fc873f924726336d2.stex" ]
+source_file="res://things/items/electronics/generators/fuel_powered_generator/assets/fuel_powered_generator.svg"
+dest_files=[ "res://.import/fuel_powered_generator.svg-b843437c5d7c4066c8c6531bc7f2ee4e.stex" ]
 
 [params]
 

@@ -3,7 +3,7 @@ class_name InventorySlot
 
 signal amount_changed(new_amount)
 
-var thing: Item = null setget set_thing
+var thing: Item2D = null setget set_thing
 var item: Item = null setget set_item
 var amount := 0 setget set_amount
 var icon
@@ -38,6 +38,7 @@ func set_thing(new_thing):
 
 func set_item(new_item: Item) -> void:
 	print('setting item')
+	print(new_item)
 	item = new_item
 	$Icon.texture = item.icon
 

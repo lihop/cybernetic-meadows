@@ -4,6 +4,7 @@ class_name Thing
 # Called "Thing" because the Object class name is already taken.
 
 
+export(String, FILE) var resource_path
 # The amount of pollution a thing produces per second when operating at full
 # capacity. A lot of things will produce zero pollution. Things can also
 # absorb pollution, in which case this number will be negative.
@@ -23,6 +24,8 @@ export(int) var reach_area_radius := 150
 var health := max_health
 
 onready var area: Area2D = get_node(area_node) if area_node else $Footprint
+
+#onready var resource: Resource = load(resource_path)
 
 var _frame: ThingFrame
 

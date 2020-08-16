@@ -22,7 +22,12 @@ _global_script_classes=[ {
 "base": "Item",
 "class": "Craftable",
 "language": "GDScript",
-"path": "res://things/items/craftables/craftable.gd"
+"path": "res://things/items/craftable.gd"
+}, {
+"base": "VBoxContainer",
+"class": "Crafting",
+"language": "GDScript",
+"path": "res://ui/in_game/inventory/crafting/crafting.gd"
 }, {
 "base": "Node",
 "class": "ElectricCharger",
@@ -42,22 +47,27 @@ _global_script_classes=[ {
 "base": "Thing",
 "class": "Electronic",
 "language": "GDScript",
-"path": "res://things/items/craftables/electronics/electronic.gd"
+"path": "res://things/items/electronics/electronic.gd"
 }, {
 "base": "Sprite",
 "class": "EquippedItem",
 "language": "GDScript",
 "path": "res://ui/in_game/inventory/inventory/scripts/equipped_item.gd"
 }, {
+"base": "Node2D",
+"class": "Extractable",
+"language": "GDScript",
+"path": "res://nodes/resource/extractable.gd"
+}, {
 "base": "StaticItem",
 "class": "FuelPoweredGenerator",
 "language": "GDScript",
-"path": "res://things/items/craftables/electronics/generators/fuel_powered_generator/fuel_powered_generator.gd"
+"path": "res://things/items/electronics/generators/fuel_powered_generator/fuel_powered_generator.gd"
 }, {
 "base": "Electronic",
 "class": "Generator",
 "language": "GDScript",
-"path": "res://things/items/craftables/electronics/generators/generator.gd"
+"path": "res://things/items/electronics/generators/generator.gd"
 }, {
 "base": "VBoxContainer",
 "class": "Inventory",
@@ -69,10 +79,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://ui/in_game/inventory/inventory/inventory_slot.gd"
 }, {
-"base": "Thing",
+"base": "Resource",
 "class": "Item",
 "language": "GDScript",
-"path": "res://things/items/item.gd"
+"path": "res://things/item.gd"
+}, {
+"base": "Thing",
+"class": "Item2D",
+"language": "GDScript",
+"path": "res://things/items/item_2d.gd"
 }, {
 "base": "Item",
 "class": "KinematicItem",
@@ -104,10 +119,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://nodes/environment/purifier/purifier.gd"
 }, {
-"base": "Item",
+"base": "Item2D",
 "class": "RawMaterial",
 "language": "GDScript",
 "path": "res://things/items/raw_materials/raw_material.gd"
+}, {
+"base": "Resource",
+"class": "Recipe",
+"language": "GDScript",
+"path": "res://resources/recipe.gd"
 }, {
 "base": "Item",
 "class": "RigidItem",
@@ -119,10 +139,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://things/items/static_item.gd"
 }, {
-"base": "Craftable",
+"base": "Node",
 "class": "Storage",
 "language": "GDScript",
-"path": "res://things/items/craftables/storage/storage.gd"
+"path": "res://nodes/storage/storage.gd"
+}, {
+"base": "Item",
+"class": "StorageResource",
+"language": "GDScript",
+"path": "res://things/items/storage/storage_resource.gd"
 }, {
 "base": "Node2D",
 "class": "Thing",
@@ -137,32 +162,30 @@ _global_script_classes=[ {
 "base": "Craftable",
 "class": "Transport",
 "language": "GDScript",
-"path": "res://things/items/craftables/transport/transport.gd"
+"path": "res://things/items/transport/transport.gd"
 }, {
 "base": "RawMaterial",
 "class": "Wood",
 "language": "GDScript",
 "path": "res://things/items/raw_materials/wood/wood.gd"
-}, {
-"base": "Storage",
-"class": "WoodenStorageChest",
-"language": "GDScript",
-"path": "res://things/items/craftables/storage/wooden_storage_chest/wooden_storage_chest.gd"
 } ]
 _global_script_class_icons={
 "Battery": "",
 "Conduit": "",
 "Craftable": "",
+"Crafting": "",
 "ElectricCharger": "",
 "ElectricGenerator": "",
 "ElectricityConsumer": "",
 "Electronic": "",
 "EquippedItem": "",
+"Extractable": "",
 "FuelPoweredGenerator": "",
 "Generator": "",
 "Inventory": "",
 "InventorySlot": "",
 "Item": "",
+"Item2D": "",
 "KinematicItem": "",
 "NaturalResource": "",
 "Player": "",
@@ -170,14 +193,15 @@ _global_script_class_icons={
 "Polluter": "",
 "Purifier": "",
 "RawMaterial": "",
+"Recipe": "",
 "RigidItem": "",
 "StaticItem": "",
 "Storage": "",
+"StorageResource": "",
 "Thing": "",
 "ThingFrame": "",
 "Transport": "",
-"Wood": "",
-"WoodenStorageChest": ""
+"Wood": ""
 }
 
 [application]
@@ -189,6 +213,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Map="*res://singletons/map.gd"
+Notifications="*res://singletons/notifications.gd"
 
 [display]
 

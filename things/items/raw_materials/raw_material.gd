@@ -1,4 +1,4 @@
-extends Item
+extends Item2D
 class_name RawMaterial
 
 

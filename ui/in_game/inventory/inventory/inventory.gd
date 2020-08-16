@@ -27,7 +27,7 @@ func _ready():
 
 func add_item(item: Item, amount: int = 1):
 	for slot in $GridContainer.get_children():
-		if slot.item and slot.item.get_class() == item.get_class():
+		if slot.item and slot.item.name == item.name:
 			slot.amount += amount
 			emit_signal("slot_updated", slot.number)
 			return

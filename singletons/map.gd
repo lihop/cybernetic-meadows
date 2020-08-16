@@ -10,8 +10,6 @@ func add_pollution(position: Vector2, amount: float) -> void:
 
 
 func subtract_pollution(position: Vector2, amount: float) -> void:
-	print('subtracting x pollution: ', amount)
-	print(amount)
 	pollution -= amount
 
 
