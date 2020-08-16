@@ -6,6 +6,7 @@ extends Node
 signal slot_updated(slot_number)
 # Emitted when the inventory itself was updated. For example after a resort.
 signal inventory_updated()
+signal changed()
 
 export(int) var num_slots := 80
 
@@ -37,6 +38,9 @@ func add(type: String, amount: int):
 			slot.amount = amount
 			emit_signal("slot_updated", slot.number)
 			return
+	
+	print('emitting signal changed!')
+	emit_signal("changed")
 
 
 func add_item(item: Item, amount: int = 1):

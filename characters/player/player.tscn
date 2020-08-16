@@ -1,10 +1,11 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://characters/player/assets/tux.png" type="Texture" id=1]
 [ext_resource path="res://characters/player/player.gd" type="Script" id=2]
 [ext_resource path="res://ui/in_game/inventory/inventory/inventory.tscn" type="PackedScene" id=3]
-[ext_resource path="res://characters/player_old/player_ui.gd" type="Script" id=4]
+[ext_resource path="res://characters/player/player_ui.gd" type="Script" id=4]
 [ext_resource path="res://ui/in_game/inventory/inventory.gd" type="Script" id=5]
+[ext_resource path="res://ui/in_game/inventory/crafting/crafting.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle_down"
@@ -271,14 +272,6 @@ __meta__ = {
 
 [node name="Inventory" parent="UI/InventoryCraftingDialog/HBoxContainer" instance=ExtResource( 3 )]
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="UI/InventoryCraftingDialog/HBoxContainer"]
-margin_left = 402.0
-margin_right = 800.0
-margin_bottom = 390.0
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="UI/InventoryCraftingDialog/HBoxContainer/VBoxContainer2"]
-margin_right = 398.0
-margin_bottom = 14.0
-text = "Crafting"
+[node name="Crafting" parent="UI/InventoryCraftingDialog/HBoxContainer" instance=ExtResource( 6 )]
+inventory_path = NodePath("../Inventory")
 [connection signal="hide" from="UI/InventoryCraftingDialog" to="UI" method="_on_InventoryCraftingDialog_hide"]

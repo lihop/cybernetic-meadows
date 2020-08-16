@@ -25,7 +25,7 @@ _global_script_classes=[ {
 "path": "res://things/items/craftable.gd"
 }, {
 "base": "VBoxContainer",
-"class": "Crafting",
+"class": "CraftingUI",
 "language": "GDScript",
 "path": "res://ui/in_game/inventory/crafting/crafting.gd"
 }, {
@@ -99,11 +99,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://things/natural_resources/natural_resource.gd"
 }, {
-"base": "KinematicBody2D",
-"class": "Player",
-"language": "GDScript",
-"path": "res://characters/player_old/player.gd"
-}, {
 "base": "Camera2D",
 "class": "PlayerCamera",
 "language": "GDScript",
@@ -173,7 +168,7 @@ _global_script_class_icons={
 "Battery": "",
 "Conduit": "",
 "Craftable": "",
-"Crafting": "",
+"CraftingUI": "",
 "ElectricCharger": "",
 "ElectricGenerator": "",
 "ElectricityConsumer": "",
@@ -188,7 +183,6 @@ _global_script_class_icons={
 "Item2D": "",
 "KinematicItem": "",
 "NaturalResource": "",
-"Player": "",
 "PlayerCamera": "",
 "Polluter": "",
 "Purifier": "",
@@ -214,6 +208,7 @@ config/icon="res://icon.png"
 
 Map="*res://singletons/map.gd"
 Notifications="*res://singletons/notifications.gd"
+Crafting="*res://singletons/crafting.gd"
 
 [display]
 

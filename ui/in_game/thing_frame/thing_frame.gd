@@ -27,7 +27,6 @@ func _ready():
 	
 	var scale_factor = Vector2(1, 1)
 	var shortest_side = min(shape.extents.x, shape.extents.y)
-	print(shortest_side)
 	if shortest_side < 64:
 		scale_factor = Vector2(0.5, 0.5)
 		if shortest_side < 32:

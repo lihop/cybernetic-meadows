@@ -10,6 +10,8 @@ const EquippedItem: PackedScene = preload("./equipped_item.tscn")
 signal slot_updated(slot_number)
 # Emitted when the inventory itself was updated. For example after a resort.
 signal inventory_updated()
+signal changed()
+
 
 export(int) var num_slots := 80
 
@@ -30,6 +32,7 @@ func add_item(item: Item, amount: int = 1):
 		if slot.item and slot.item.name == item.name:
 			slot.amount += amount
 			emit_signal("slot_updated", slot.number)
+			emit_signal("changed")
 			return
 	
 	for slot in $GridContainer.get_children():
@@ -37,7 +40,22 @@ func add_item(item: Item, amount: int = 1):
 			slot.item = item
 			slot.amount = amount
 			emit_signal("slot_updated", slot.number)
+			emit_signal("changed")
 			return
+
+
+func remove_item(item: Item, amount: int = 1):
+	var removed := 0
+	
+	for slot in $GridContainer.get_children():
+		if slot.item and slot.item.name == item.name:
+			var to_remove = min(slot.amount, amount)
+			slot.amount -= to_remove
+			removed += to_remove
+			if removed == amount:
+				break
+			emit_signal("slot_updated", slot.number)
+	emit_signal("changed")
 
 
 func equip_slot(slot_idx: int) -> void:
@@ -58,3 +76,12 @@ func equip_slot(slot_idx: int) -> void:
 		equipped_item.slot = slot
 		add_child(equipped_item)
 		equipped_item.set_as_toplevel(true)
+
+
+# Returns whether inventory has amount of item.
+func has_item(item: Item, amount: int = 1) -> bool:
+	var total := 0
+	for slot in $GridContainer.get_children():
+		if slot.item and slot.item.name == item.name:
+			total += slot.amount
+	return total > 0

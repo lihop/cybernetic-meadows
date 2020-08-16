@@ -6,7 +6,8 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-time = 0.5
+enabled = false
+energy_required = 0.5
 ingredients = [ {
 "item": ExtResource( 3 ),
 "quantity": 5
@@ -16,3 +17,4 @@ ingredients = [ {
 script = ExtResource( 1 )
 name = "Furnace"
 recipe = SubResource( 1 )
+scene_path = ""

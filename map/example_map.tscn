@@ -3,7 +3,7 @@
 [ext_resource path="res://map/map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://characters/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://things/natural_resources/tree/tree.tscn" type="PackedScene" id=3]
-[ext_resource path="res://things/items/storage/wooden_storage_chest/wooden_chest.tscn" type="PackedScene" id=4]
+[ext_resource path="res://things/items/storage/wooden_chest/wooden_chest.tscn" type="PackedScene" id=4]
 
 [node name="World" instance=ExtResource( 1 )]
 
@@ -15,6 +15,13 @@ tile_data = PoolIntArray( -1048604, 1, 65537, -1048603, 1, 65537, -1048602, 1, 6
 
 [node name="WoodenChest" parent="Things" index="0" instance=ExtResource( 4 )]
 position = Vector2( -120, 136 )
+resource_path = ""
+pollution_per_second = 0.0
+market_value = 0.0
+max_health = 0
+map_color = Color( 0, 0, 0, 1 )
+area_node = NodePath("")
+reach_area_radius = 150
 
 [node name="Player" parent="Things" index="1" instance=ExtResource( 2 )]
 inventory_node = NodePath("../../../World/Things/Player/UI/InventoryCraftingDialog/HBoxContainer/Inventory")
