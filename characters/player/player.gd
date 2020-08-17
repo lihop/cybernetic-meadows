@@ -74,3 +74,8 @@ func _process(delta):
 		var construction: Construction = target.get_node_or_null("Construction")
 		if construction and construction.constructed:
 			construction.deconstruct(self)
+		
+		
+		if target is DroppedThing:
+			inventory.add_item(target.resource)
+			target.queue_free()

@@ -2,8 +2,11 @@ extends Sprite
 class_name EquippedItem
 
 
+const DroppedThing = preload("res://things/dropped_thing.tscn")
+
 var slot: InventorySlot setget set_slot
 
+onready var map: Map2D = $"/root/World/Map"
 
 func set_slot(p_slot: InventorySlot) -> void:
 	if slot == p_slot:
@@ -24,31 +27,13 @@ func _process(_delta):
 	
 	if Input.is_action_just_pressed("drop_item"):
 		# TODO: Create an instace of the item at mouse position.
-		var dropped_item: Item2D = load(slot.item.scene_path).instance()
-		$"/root/World".add_child(dropped_item)
-		var tile: Vector2 = $"/root/World/Navigation2D/TileMap".world_to_map(
-					$"/root/World/Navigation2D/TileMap".get_global_mouse_position())
-		var origin: Vector2 = $"/root/World/Navigation2D/TileMap".map_to_world(tile)
-		var target := origin
-		var space_state := get_world_2d().direct_space_state
-		var collisions: Array = space_state.intersect_point(target)
-		var i = Vector2.ZERO
-		print(collisions)
-		while not collisions.empty():
-			i += Vector2(32, 32)
-			for direction in [Vector2.UP, Vector2.DOWN, Vector2.LEFT,
-					Vector2.RIGHT, Vector2.UP + Vector2.LEFT,
-					Vector2.UP + Vector2.RIGHT, Vector2.DOWN + Vector2.LEFT,
-					Vector2.DOWN + Vector2.RIGHT]:
-				target = origin + direction * i
-				print(target)
-				collisions = space_state.intersect_point(target)
-				print(collisions)
-				if collisions.empty():
-					break
-		dropped_item.global_position = target
-			
-		print(get_global_mouse_position())
+		var dropped_item: Item2D = DroppedThing.instance()
+		dropped_item.resource = slot.item
+		print("dropped global mouse position: ", map.get_global_mouse_position())
+		dropped_item.global_position = map.closest_empty_position(
+					map.get_global_mouse_position())
+		$"/root/World/Things".add_child(dropped_item)
+		
 		slot.amount -= 1
 		if slot.amount == 0:
 			slot.equipped = false
