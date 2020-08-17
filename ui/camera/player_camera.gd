@@ -12,8 +12,7 @@ onready var target: Node2D = get_node(target_node)
 
 
 func _process(delta):
-	global_position = lerp(global_position, target.global_position,
-			delta * speed)
+	global_position = target.global_position
 
 
 func _unhandled_input(event):
