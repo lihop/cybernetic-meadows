@@ -70,3 +70,7 @@ func _process(delta):
 			# Animation stuff. Maybe move to target.hit() instead?
 			if extractable.has_method("hit"):
 				extractable.hit()
+		
+		var construction: Construction = target.get_node_or_null("Construction")
+		if construction and construction.constructed:
+			construction.deconstruct(self)

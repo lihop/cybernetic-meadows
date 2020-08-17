@@ -4,7 +4,7 @@ class_name Thing
 # Called "Thing" because the Object class name is already taken.
 
 
-export(String, FILE) var resource_path
+export(Resource) var resource
 # The amount of pollution a thing produces per second when operating at full
 # capacity. A lot of things will produce zero pollution. Things can also
 # absorb pollution, in which case this number will be negative.
