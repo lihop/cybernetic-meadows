@@ -30,3 +30,8 @@ func closest_empty_position(pos: Vector2, size: Vector2 = cell_size):
 			if collisions.empty():
 				break
 	return target
+
+
+# Returs the closest tile center position to pos.
+func closest_tile(pos: Vector2) -> Vector2:
+	return map_to_world(world_to_map(pos))

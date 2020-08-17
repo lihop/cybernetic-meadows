@@ -71,9 +71,9 @@ func _process(delta):
 			if extractable.has_method("hit"):
 				extractable.hit()
 		
-		var construction: Construction = target.get_node_or_null("Construction")
-		if construction and construction.constructed:
-			construction.deconstruct(self)
+		var constructor: ItemConstructor = target.get_node_or_null("Constructor")
+		if constructor and constructor.constructed:
+			constructor.deconstruct(self)
 		
 		
 		if target is DroppedThing:

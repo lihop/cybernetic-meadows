@@ -10,3 +10,4 @@ script = ExtResource( 1 )
 name = "Wood"
 icon = SubResource( 1 )
 scene_path = "res://things/items/raw_materials/wood/wood.tscn"
+placeable = false

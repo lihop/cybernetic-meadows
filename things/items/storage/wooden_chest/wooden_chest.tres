@@ -20,4 +20,5 @@ name = "Wooden chest"
 icon = ExtResource( 1 )
 recipe = SubResource( 1 )
 scene_path = "res://things/items/storage/wooden_chest/wooden_chest.tscn"
+placeable = true
 slots = 16.0
