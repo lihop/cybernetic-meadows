@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/in_game/grids/item_slot.gd" type="Script" id=1]
+[ext_resource path="res://ui/in_game/grids/assets/inventory_slot_pressed.png" type="Texture" id=2]
+[ext_resource path="res://ui/in_game/grids/assets/inventory_slot_hover.png" type="Texture" id=3]
+[ext_resource path="res://ui/in_game/grids/assets/inventory_slot_normal.png" type="Texture" id=4]
+
+[node name="InventorySlotUI" type="TextureButton"]
+margin_right = 35.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 35, 35 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmountLabel" type="Label" parent="."]
+anchor_left = 0.914
+anchor_top = 1.0
+anchor_right = 0.914
+anchor_bottom = 1.0
+margin_left = -7.99
+margin_top = -14.0
+margin_right = 0.00999832
+grow_horizontal = 0
+grow_vertical = 0
+align = 2
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

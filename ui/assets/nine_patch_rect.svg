@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg943"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   sodipodi:docname="nine_patch_rect.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata949">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs947" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     id="namedview945"
+     showgrid="false"
+     inkscape:snap-page="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="14.75"
+     inkscape:cx="29.627658"
+     inkscape:cy="23.313865"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg943" />
+  <rect
+     style="fill:#00222b;fill-opacity:1;stroke-width:0.107;paint-order:markers stroke fill"
+     id="rect1701"
+     width="42.372883"
+     height="42.305084"
+     x="2.9830508"
+     y="2.7796609" />
+  <image
+     y="0"
+     x="8.8817853e-16"
+     id="image1590"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGBJREFUOI1j
+ZICCracv/GcgAzAyMDAwLD51Ca5ZWFyCNAO2nr7w/91/JoZLx48z6FlakuwCFhhDz9KS4dLx4+QZ
+ICwuwfD25QsGBgYGhu78dEZSDGAi2cpRA0YNGJQGAADTyxaRqrurWwAAAABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="16"
+     width="16" />
+  <image
+     y="-32"
+     x="9.6023414e-16"
+     id="image1684"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAC5JREFUOI1j
+3Hr6wn9GMSmGty9fMDy4cYOhNi6MkYEEwESK4lEDRg0YNWAwGwAAiNQKIE89zIIAAAAASUVORK5C
+YII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="16"
+     width="16"
+     transform="rotate(90)" />
+  <image
+     width="16"
+     height="16"
+     preserveAspectRatio="none"
+     style="image-rendering:optimizeSpeed"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGBJREFUOI1j
+ZICCracv/GcgAzAyMDAwLD51Ca5ZWFyCNAO2nr7w/91/JoZLx48z6FlakuwCFhhDz9KS4dLx4+QZ
+ICwuwfD25QsGBgYGhu78dEZSDGAi2cpRA0YNGJQGAADTyxaRqrurWwAAAABJRU5ErkJggg==
+"
+     id="image1687"
+     x="1.4971696e-16"
+     y="-48"
+     transform="rotate(90)" />
+  <image
+     width="16"
+     height="16"
+     preserveAspectRatio="none"
+     style="image-rendering:optimizeSpeed"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAC5JREFUOI1j
+3Hr6wn9GMSmGty9fMDy4cYOhNi6MkYEEwESK4lEDRg0YNWAwGwAAiNQKIE89zIIAAAAASUVORK5C
+YII=
+"
+     id="image1689"
+     x="8.8817853e-16"
+     y="16" />
+  <image
+     y="-32"
+     x="-48"
+     id="image1691"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAC5JREFUOI1j
+3Hr6wn9GMSmGty9fMDy4cYOhNi6MkYEEwESK4lEDRg0YNWAwGwAAiNQKIE89zIIAAAAASUVORK5C
+YII=
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="16"
+     width="16"
+     transform="scale(-1)" />
+  <image
+     width="16"
+     height="16"
+     preserveAspectRatio="none"
+     style="image-rendering:optimizeSpeed"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGBJREFUOI1j
+ZICCracv/GcgAzAyMDAwLD51Ca5ZWFyCNAO2nr7w/91/JoZLx48z6FlakuwCFhhDz9KS4dLx4+QZ
+ICwuwfD25QsGBgYGhu78dEZSDGAi2cpRA0YNGJQGAADTyxaRqrurWwAAAABJRU5ErkJggg==
+"
+     id="image1693"
+     x="-48"
+     y="-48"
+     transform="scale(-1)" />
+  <image
+     transform="rotate(-90)"
+     width="16"
+     height="16"
+     preserveAspectRatio="none"
+     style="image-rendering:optimizeSpeed"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAC5JREFUOI1j
+3Hr6wn9GMSmGty9fMDy4cYOhNi6MkYEEwESK4lEDRg0YNWAwGwAAiNQKIE89zIIAAAAASUVORK5C
+YII=
+"
+     id="image1695"
+     x="-48"
+     y="15.999998" />
+  <image
+     transform="rotate(-90)"
+     y="2.9391522e-15"
+     x="-48"
+     id="image1697"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGBJREFUOI1j
+ZICCracv/GcgAzAyMDAwLD51Ca5ZWFyCNAO2nr7w/91/JoZLx48z6FlakuwCFhhDz9KS4dLx4+QZ
+ICwuwfD25QsGBgYGhu78dEZSDGAi2cpRA0YNGJQGAADTyxaRqrurWwAAAABJRU5ErkJggg==
+"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     height="16"
+     width="16" />
+  <rect
+     style="fill:#759199;fill-opacity:1;stroke-width:0.10465467;paint-order:markers stroke fill"
+     id="rect1703"
+     width="16.118643"
+     height="0.99999988"
+     x="15.949152"
+     y="44" />
+  <rect
+     y="3.0169511"
+     x="16"
+     height="0.98305082"
+     width="16.118643"
+     id="rect1705"
+     style="fill:#759199;fill-opacity:1;stroke-width:0.10376398;paint-order:markers stroke fill" />
+  <rect
+     y="-44.998791"
+     x="15.942133"
+     height="0.99999988"
+     width="16.118643"
+     id="rect1707"
+     style="fill:#759199;fill-opacity:1;stroke-width:0.10465467;paint-order:markers stroke fill"
+     transform="rotate(90)" />
+  <rect
+     transform="rotate(90)"
+     style="fill:#759199;fill-opacity:1;stroke-width:0.10465467;paint-order:markers stroke fill"
+     id="rect1709"
+     width="16.118643"
+     height="0.99999988"
+     x="16"
+     y="-3.9818416" />
+</svg>

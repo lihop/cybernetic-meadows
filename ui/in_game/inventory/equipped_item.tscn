@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/in_game/inventory/equipped_item.gd" type="Script" id=1]
+[ext_resource path="res://items/raw_materials/wood/assets/wood_icon.svg" type="Texture" id=2]
+
+
+[node name="EquippedSlot" type="Sprite"]
+texture = ExtResource( 2 )
+offset = Vector2( 16, 16 )
+script = ExtResource( 1 )
+
+[node name="AmountLabel" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.5
+margin_bottom = -0.5
+grow_horizontal = 0
+grow_vertical = 0
+text = "15"
+align = 2
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
