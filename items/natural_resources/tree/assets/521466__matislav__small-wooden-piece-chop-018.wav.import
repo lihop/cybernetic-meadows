@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/521466__matislav__small-wooden-piece-chop-018.wav-40112d9543fa6ad3fdf9f6b68b7b8d55.sample"
+
+[deps]
+
+source_file="res://items/natural_resources/tree/assets/521466__matislav__small-wooden-piece-chop-018.wav"
+dest_files=[ "res://.import/521466__matislav__small-wooden-piece-chop-018.wav-40112d9543fa6ad3fdf9f6b68b7b8d55.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0

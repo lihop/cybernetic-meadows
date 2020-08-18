@@ -7,6 +7,7 @@ class_name Map2D
 # footprint areas collision layer (layer 6).
 const footprint_collision_layer = 32 # bit 5, 32
 
+var pollution := 0.0
 
 # Returns the closest empty position to pos of the given size.
 func closest_empty_position(pos: Vector2, size: Vector2 = cell_size):
@@ -35,3 +36,15 @@ func closest_empty_position(pos: Vector2, size: Vector2 = cell_size):
 # Returs the closest tile center position to pos.
 func closest_tile(pos: Vector2) -> Vector2:
 	return map_to_world(world_to_map(pos))
+
+
+func add_pollution(position: Vector2, amount: float) -> void:
+	pollution += amount
+
+
+func subtract_pollution(position: Vector2, amount: float) -> void:
+	pollution -= amount
+
+
+func get_pollution(position: Vector2) -> float:
+	return pollution

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" load_steps=6 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/recipe_resource.gd" type="Script" id=2]
+[ext_resource path="res://items/storage/wooden_chest/assets/wooden_chest.png" type="Texture" id=3]
+[ext_resource path="res://items/raw_materials/wood/wood.tres" type="Resource" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+enabled = true
+energy_required = 0.5
+ingredients = [ {
+"item": ExtResource( 4 ),
+"quantity": 2
+} ]
+
+[resource]
+script = ExtResource( 1 )
+display_name = "Wooden chest"
+name = "wooden_chest"
+icon = ExtResource( 3 )
+recipe = SubResource( 1 )
+scene_path = ""
+placeable = true

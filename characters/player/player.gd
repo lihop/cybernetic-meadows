@@ -7,7 +7,7 @@ export(int) var speed := 75
 export(NodePath) var inventory_node
 
 var velocity = Vector2()
-var target: Thing = null
+var target: Item2D = null
 
 onready var inventory = get_node(inventory_node)
 
@@ -71,11 +71,6 @@ func _process(delta):
 			if extractable.has_method("hit"):
 				extractable.hit()
 		
-		var constructor: ItemConstructor = target.get_node_or_null("Constructor")
-		if constructor and constructor.constructed:
-			constructor.deconstruct(self)
 		
-		
-		if target is DroppedThing:
-			inventory.add_item(target.resource)
-			target.queue_free()
+		if target.has_method("deconstruct"):
+			target.deconstruct(self)

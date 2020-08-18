@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/wood.png-f2575c1835aaab80845efb64648e8a15.stex"
+
+[resource]
+script = ExtResource( 1 )
+display_name = ""
+name = "Wood"
+icon = SubResource( 1 )
+scene_path = "res://items/raw_materials/wood/wood.tscn"
+placeable = false

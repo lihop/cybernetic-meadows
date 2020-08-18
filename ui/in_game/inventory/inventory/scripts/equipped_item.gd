@@ -2,8 +2,8 @@ extends Sprite
 class_name EquippedItem
 
 
-const Blueprint = preload("res://things/blueprint.tscn")
-const DroppedThing = preload("res://things/dropped_thing.tscn")
+const Blueprint = preload("res://items/misc/blueprint.tscn")
+const DroppedThing = preload("res://items/misc/dropped_item.tscn")
 
 var slot: InventorySlot setget set_slot
 

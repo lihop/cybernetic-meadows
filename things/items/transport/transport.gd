@@ -1,2 +1,0 @@
-extends Craftable
-class_name Transport
