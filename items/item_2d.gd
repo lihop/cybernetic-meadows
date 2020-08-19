@@ -38,6 +38,8 @@ var _frame: ThingFrame
 func _ready():
 	if not resource.scene_path:
 		resource.scene_path = get_filename()
+		if not resource.scene_path:
+			push_error("Could not automatically set resources scene_path")
 	
 	area.connect("mouse_entered", self, "_on_Area2D_mouse_entered")
 	area.connect("mouse_exited", self, "_on_Area2D_mouse_exited")

@@ -20,5 +20,5 @@ display_name = "Wooden chest"
 name = "wooden_chest"
 icon = ExtResource( 3 )
 recipe = SubResource( 1 )
-scene_path = ""
+scene_path = "res://items/storage/wooden_chest/wooden_chest.tscn"
 placeable = true
