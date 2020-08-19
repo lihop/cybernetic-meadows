@@ -49,25 +49,3 @@ func extract(effort: float):
 		next_yield += extraction_effort
 	
 	return result
-
-
-# TODO: Maybe move the audio visual stuff to the tree scene, as it is not
-# really related to the Extractable node. For now push Audio Visual stuff
-# down the bottom here.
-export(Array, AudioStream) var sounds
-export(Array, NodePath) var particles
-
-
-func _ready():
-	randomize()
-
-
-func hit():
-	if not sounds.empty() and not $AudioStreamPlayer2D.is_playing():
-		var sound = sounds[randi() % sounds.size()]
-		$AudioStreamPlayer2D.stream = sound
-		$AudioStreamPlayer2D.play()
-	for path in particles:
-		var particle = get_node_or_null(path)
-		if particle is Particles2D:
-			particle.emitting = true

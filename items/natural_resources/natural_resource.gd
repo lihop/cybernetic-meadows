@@ -25,6 +25,17 @@ func _ready():
 	connect("depleted", self, "_on_depleted")
 
 
+func _on_depleted():
+	# TODO: Change the sprite to show a tree stump.
+	# TODO: Change the footprint to removeable, meaning that if anything is
+	# placed on top of this node's tile, it will be deleted.
+	queue_free()
+
+
+func _on_Extractable_depleted():
+	queue_free()
+
+
 func extract(effort: float) -> Array:
 	push_error("Deprecated. Use an Extractable node instead!")
 	print('effort: ', effort)

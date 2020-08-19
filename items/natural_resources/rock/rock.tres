@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/natural_resources/rock/assets/rock.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+display_name = "Rock"
+name = "rock"
+icon = ExtResource( 2 )
+scene_path = "res://items/natural_resources/rock/rock.tscn"
+placeable = false
