@@ -5,9 +5,6 @@ class_name Inventory
 const EquippedItem = preload("res://ui/in_game/inventory/equipped_item.tscn")
 onready var UI = $"/root/World/UI"
 
-# Emitted when an inventory slot is updated. For example, the amount changed
-# or a new item was added.
-signal slot_updated(slot_number)
 signal inventory_updated()
 
 export(int) var num_slots := 80
@@ -48,7 +45,6 @@ func remove_item(item: Item, amount: int = 1):
 			removed += to_remove
 			if removed == amount:
 				break
-			emit_signal("slot_updated", slot.number)
 	emit_signal("inventory_updated")
 
 
