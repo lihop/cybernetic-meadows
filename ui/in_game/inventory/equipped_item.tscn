@@ -3,8 +3,8 @@
 [ext_resource path="res://ui/in_game/inventory/equipped_item.gd" type="Script" id=1]
 [ext_resource path="res://items/raw_materials/wood/assets/wood_icon.svg" type="Texture" id=2]
 
-
 [node name="EquippedSlot" type="Sprite"]
+z_index = 1000
 texture = ExtResource( 2 )
 offset = Vector2( 16, 16 )
 script = ExtResource( 1 )

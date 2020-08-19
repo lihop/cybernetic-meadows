@@ -6,6 +6,7 @@ export(NodePath) var player_node
 
 var current_window = null
 var player_inventory: Inventory
+var equipped_item: EquippedItem = null
 
 onready var player: Player = get_node(player_node)
 
@@ -35,6 +36,9 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func open_window(window: Popup):
+	if not get_children().has(window):
+		add_child(window)
+	
 	for window in get_tree().get_nodes_in_group("ui_windows"):
 		window.hide()
 	# Use popup_centered() to center the window, but then use hide() and show()

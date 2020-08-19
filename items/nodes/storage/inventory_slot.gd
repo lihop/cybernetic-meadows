@@ -14,6 +14,12 @@ signal unequipped()
 var item: Item = null setget set_item
 var amount := 0 setget set_amount
 var equipped := false setget set_equipped
+# The inventory to which this slot belongs.
+var inventory
+
+
+func _init(inventory):
+	self.inventory = inventory
 
 
 func set_equipped(is_equipped: bool) -> void:
@@ -34,3 +40,7 @@ func set_amount(new_amount: int) -> void:
 		emit_signal("amount_changed", new_amount)
 		if amount <= 0:
 			self.item = null
+
+
+func empty():
+	return amount <= 0 or item == null

@@ -9,13 +9,12 @@ signal inventory_updated()
 
 export(int) var num_slots := 80
 
-var equipped_item: EquippedItem = null
 var slots := []
 
 
 func _ready():
 	for i in range(num_slots):
-		var slot = InventorySlot.new()
+		var slot = InventorySlot.new(self)
 		slots.append(slot)
 	emit_signal("inventory_updated")
 
@@ -51,25 +50,25 @@ func remove_item(item: Item, amount: int = 1):
 func equip_slot(slot_idx: int) -> void:
 	var slot = slots[slot_idx]
 
-	if equipped_item and equipped_item.slot == slot:
+	if UI.equipped_item and UI.equipped_item.slot == slot:
 		slot.equipped = false
-		equipped_item.queue_free()
+		UI.equipped_item.queue_free()
 		return
 
-	if equipped_item and slot.amount < 1:
-		equipped_item.slot.equipped = false
-		equipped_item.queue_free()
+	if UI.equipped_item and slot.amount < 1:
+		UI.equipped_item.slot.equipped = false
+		UI.equipped_item.queue_free()
 		return
 
-	if not equipped_item and slot.amount > 0:
-		equipped_item = EquippedItem.instance()
-		equipped_item.slot = slot
-		UI.add_child(equipped_item)
+	if not UI.equipped_item and slot.amount > 0:
+		UI.equipped_item = EquippedItem.instance()
+		UI.equipped_item.slot = slot
+		$"/root/World/UI".add_child(UI.equipped_item)
 
 
 func unequip_slot():
-	if equipped_item and equipped_item.slot:
-		equipped_item.cancel()
+	if UI.equipped_item and UI.equipped_item.slot:
+		UI.equipped_item.cancel()
 
 
 # Returns whether inventory has amount of item.

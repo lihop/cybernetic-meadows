@@ -2,6 +2,8 @@ extends ItemGrid
 # An ItemGrid for displaying and crafiting craftable items.
 
 
+onready var UI = $"/root/World/UI"
+
 var inventory: Inventory setget set_inventory
 
 
@@ -18,10 +20,19 @@ func set_inventory(new_inventory: Inventory) -> void:
 
 
 func _on_slot_pressed(slot_index: int) -> void:
-	if not inventory.equipped_item:
+	if not UI.equipped_item:
 		inventory.equip_slot(slot_index)
-	elif inventory.equipped_item.slot == inventory.slots[slot_index]:
+	elif UI.equipped_item.slot == inventory.slots[slot_index]:
 		inventory.unequip_slot()
-	else:
+	elif UI.equipped_item.slot.inventory == inventory:
 		inventory.unequip_slot()
 		# TODO: Swap slots.
+	elif UI.equipped_item.slot.inventory != inventory:
+		var equipped_slot = UI.equipped_item.slot
+		var other_slot = inventory.slots[slot_index]
+		
+		if other_slot.empty():
+			other_slot.item = equipped_slot.item
+			other_slot.amount = equipped_slot.amount
+			equipped_slot.amount = 0
+			equipped_slot.inventory.unequip_slot()
