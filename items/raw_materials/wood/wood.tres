@@ -7,8 +7,8 @@ load_path = "res://.import/wood.png-f2575c1835aaab80845efb64648e8a15.stex"
 
 [resource]
 script = ExtResource( 1 )
-display_name = ""
-name = "Wood"
+display_name = "Wood"
+name = "wood"
 icon = SubResource( 1 )
 scene_path = "res://items/raw_materials/wood/wood.tscn"
 placeable = false

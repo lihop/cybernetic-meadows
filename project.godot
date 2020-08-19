@@ -153,11 +153,6 @@ _global_script_classes=[ {
 "class": "ThingFrame",
 "language": "GDScript",
 "path": "res://ui/in_game/thing_frame/thing_frame.gd"
-}, {
-"base": "RawMaterial",
-"class": "Wood",
-"language": "GDScript",
-"path": "res://items/raw_materials/wood/wood.gd"
 } ]
 _global_script_class_icons={
 "Battery": "",
@@ -188,8 +183,7 @@ _global_script_class_icons={
 "RawMaterial": "",
 "Recipe": "",
 "Storage": "",
-"ThingFrame": "",
-"Wood": ""
+"ThingFrame": ""
 }
 
 [application]

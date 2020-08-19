@@ -1,3 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Stone" type="Node2D"]
+[ext_resource path="res://items/raw_materials/raw_material.tscn" type="PackedScene" id=1]
+
+[node name="Stone" instance=ExtResource( 1 )]
+area_node = NodePath("../Stone/Area2D")
