@@ -12,3 +12,4 @@ name = "wood"
 icon = SubResource( 1 )
 scene_path = "res://items/raw_materials/wood/wood.tscn"
 placeable = false
+energy = 2.0

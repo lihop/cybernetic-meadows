@@ -5,6 +5,8 @@ class_name InventorySlotUI
 
 var slot: InventorySlot setget set_slot
 
+onready var UI = $"/root/World/UI"
+
 
 func set_slot(new_slot: InventorySlot) -> void:
 	if slot != new_slot:
@@ -49,3 +51,24 @@ func _on_equipped():
 func _on_unequipped():
 	$AmountLabel.visible = slot.amount > 0
 	$Icon.texture = slot.item.icon if slot.item else null
+
+
+func _on_InventorySlotUI_pressed() -> void:
+	var slot_index = slot.index
+	
+	if not UI.equipped_item:
+		slot.inventory.equip_slot(slot_index)
+	elif UI.equipped_item.slot == slot.inventory.slots[slot_index]:
+		slot.inventory.unequip_slot()
+	elif UI.equipped_item.slot.inventory == slot.inventory:
+		slot.inventory.unequip_slot()
+		# TODO: Swap slots.
+	elif UI.equipped_item.slot.inventory != slot.inventory:
+		var equipped_slot = UI.equipped_item.slot
+		var other_slot = slot.inventory.slots[slot_index]
+		
+		if other_slot.empty():
+			other_slot.item = equipped_slot.item
+			other_slot.amount = equipped_slot.amount
+			equipped_slot.amount = 0
+			equipped_slot.inventory.unequip_slot()

@@ -8,3 +8,6 @@ export(Texture) var icon
 export(Resource) var recipe
 export(String, FILE) var scene_path
 export(bool) var placeable := true
+
+# Amount of energy contained in the item in MJ.
+export(float) var energy := 0.0

@@ -10,3 +10,4 @@ name = "tree"
 icon = ExtResource( 2 )
 scene_path = "res://items/natural_resources/tree/tree.tscn"
 placeable = false
+energy = 0.0

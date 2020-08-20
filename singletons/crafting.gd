@@ -30,6 +30,12 @@ func _gather_craftable_resources(path: String) -> Array:
 			if file_name.ends_with(".res") or file_name.ends_with(".tres"):
 				var resource = load("%s/%s" % [dir.get_current_dir(), file_name])
 				if "recipe" in resource and resource.recipe is Recipe:
+					# Remove unused ingredient and output slots.
+					for i in range(resource.recipe.ingredients.size() - 1, 0):
+						if resource.recipe.ingredients[i] == null:
+							resource.recipe.ingredients.remove(i)
+						if resource.recipe.outputs[i] == null:
+							resource.recipe.outputs.remove(i)
 					result.append(resource)
 			file_name = dir.get_next()
 		

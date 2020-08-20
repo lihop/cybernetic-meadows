@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/381994__sforsman__furnace.wav-a1154ac68683a056d190a332ac934638.sample"
+
+[deps]
+
+source_file="res://items/furnaces/stone_furnace/assets/381994__sforsman__furnace.wav"
+dest_files=[ "res://.import/381994__sforsman__furnace.wav-a1154ac68683a056d190a332ac934638.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

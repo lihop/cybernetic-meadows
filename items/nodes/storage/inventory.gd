@@ -6,6 +6,7 @@ const EquippedItem = preload("res://ui/in_game/inventory/equipped_item.tscn")
 onready var UI = $"/root/World/UI"
 
 signal inventory_updated()
+signal slot_updated(slot_index)
 
 export(int) var num_slots := 80
 
@@ -14,19 +15,21 @@ var slots := []
 
 func _ready():
 	for i in range(num_slots):
-		var slot = InventorySlot.new(self)
+		var slot = InventorySlot.new(self, i)
 		slots.append(slot)
 	emit_signal("inventory_updated")
 
 
 func add_item(item: Item, amount: int = 1):
-	for slot in slots:
+	for i in range(slots.size()):
+		var slot = slots[i]
 		if slot.item and slot.item.name == item.name:
 			slot.amount += amount
 			emit_signal("inventory_updated")
 			return
 	
-	for slot in slots:
+	for i in range(slots.size()):
+		var slot = slots[i]
 		if slot.amount == 0:
 			slot.item = item
 			slot.amount = amount
@@ -75,6 +78,8 @@ func unequip_slot():
 func has_item(item: Item, amount: int = 1) -> bool:
 	var total := 0
 	for slot in slots:
+		if not slot.item or not item:
+			continue
 		if slot.item and slot.item.name == item.name:
 			total += slot.amount
 	return total > 0

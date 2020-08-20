@@ -10,3 +10,4 @@ name = "stone"
 icon = ExtResource( 2 )
 scene_path = "res://items/raw_materials/stone/stone.tscn"
 placeable = false
+energy = 0.0

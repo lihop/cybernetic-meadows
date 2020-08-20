@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/electric/conduit/conduit.gd"
 }, {
+"base": "Node",
+"class": "CraftingNode",
+"language": "GDScript",
+"path": "res://items/nodes/crafting/crafting_node.gd"
+}, {
 "base": "Item2D",
 "class": "DroppedItem",
 "language": "GDScript",
@@ -59,10 +64,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/resource/extractable.gd"
 }, {
+"base": "Node",
+"class": "Fuel",
+"language": "GDScript",
+"path": "res://items/nodes/fuel/fuel.gd"
+}, {
 "base": "StaticItem",
 "class": "FuelPoweredGenerator",
 "language": "GDScript",
 "path": "res://items/electronics/generators/fuel_powered_generator/fuel_powered_generator.gd"
+}, {
+"base": "Item2D",
+"class": "Furnace",
+"language": "GDScript",
+"path": "res://items/furnaces/furnace.gd"
 }, {
 "base": "Electronic",
 "class": "Generator",
@@ -144,6 +159,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/recipe_resource.gd"
 }, {
+"base": "Reference",
+"class": "RecipeData",
+"language": "GDScript",
+"path": "res://singletons/data/recipe_data.gd"
+}, {
+"base": "Node",
+"class": "Smelting",
+"language": "GDScript",
+"path": "res://items/furnaces/smelting.gd"
+}, {
 "base": "Item2D",
 "class": "Storage",
 "language": "GDScript",
@@ -158,6 +183,7 @@ _global_script_class_icons={
 "Battery": "",
 "Blueprint": "",
 "Conduit": "",
+"CraftingNode": "",
 "DroppedItem": "",
 "ElectricCharger": "",
 "ElectricGenerator": "",
@@ -165,7 +191,9 @@ _global_script_class_icons={
 "Electronic": "",
 "EquippedItem": "",
 "Extractable": "",
+"Fuel": "",
 "FuelPoweredGenerator": "",
+"Furnace": "",
 "Generator": "",
 "InGameUI": "",
 "Inventory": "",
@@ -182,6 +210,8 @@ _global_script_class_icons={
 "Purifier": "",
 "RawMaterial": "",
 "Recipe": "",
+"RecipeData": "",
+"Smelting": "",
 "Storage": "",
 "ThingFrame": ""
 }
@@ -196,6 +226,7 @@ config/icon="res://icon.png"
 
 Notifications="*res://singletons/notifications.gd"
 Crafting="*res://singletons/crafting.gd"
+Data="*res://singletons/data/data.gd"
 
 [display]
 

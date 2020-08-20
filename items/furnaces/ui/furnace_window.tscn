@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/in_game/inventory/inventory_grid.tscn" type="PackedScene" id=1]
+[ext_resource path="res://items/furnaces/ui/furnace_window.gd" type="Script" id=2]
+[ext_resource path="res://items/furnaces/ui/furnace_panel.gd" type="Script" id=3]
+[ext_resource path="res://ui/in_game/grids/item_slot.tscn" type="PackedScene" id=4]
+
+[node name="FurnaceWindow" type="WindowDialog"]
+margin_right = 48.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="FurnacePanel" type="MarginContainer" parent="VBoxContainer"]
+margin_right = 90.0
+margin_bottom = 92.0
+script = ExtResource( 3 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/FurnacePanel"]
+margin_right = 90.0
+margin_bottom = 92.0
+
+[node name="Label" type="Label" parent="VBoxContainer/FurnacePanel/VBoxContainer"]
+margin_right = 90.0
+margin_bottom = 14.0
+text = "Stone Furnace"
+
+[node name="Production" type="HBoxContainer" parent="VBoxContainer/FurnacePanel/VBoxContainer"]
+margin_top = 18.0
+margin_right = 90.0
+margin_bottom = 53.0
+
+[node name="InputSlot" parent="VBoxContainer/FurnacePanel/VBoxContainer/Production" instance=ExtResource( 4 )]
+
+[node name="ProductionProgress" type="ProgressBar" parent="VBoxContainer/FurnacePanel/VBoxContainer/Production"]
+margin_left = 39.0
+margin_top = 10.0
+margin_right = 51.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="OutputSlot" parent="VBoxContainer/FurnacePanel/VBoxContainer/Production" instance=ExtResource( 4 )]
+margin_left = 55.0
+margin_right = 90.0
+
+[node name="Fuel" type="HBoxContainer" parent="VBoxContainer/FurnacePanel/VBoxContainer"]
+margin_top = 57.0
+margin_right = 90.0
+margin_bottom = 92.0
+
+[node name="FuelSlot" parent="VBoxContainer/FurnacePanel/VBoxContainer/Fuel" instance=ExtResource( 4 )]
+
+[node name="FuelRemaining" type="ProgressBar" parent="VBoxContainer/FurnacePanel/VBoxContainer/Fuel"]
+margin_left = 39.0
+margin_top = 10.0
+margin_right = 90.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="PlayerInventory" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 96.0
+margin_right = 90.0
+margin_bottom = 114.0
