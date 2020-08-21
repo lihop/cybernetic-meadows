@@ -10,26 +10,24 @@ signal slot_updated(slot_index)
 
 export(int) var num_slots := 80
 
-var slots := []
-
 
 func _ready():
-	for i in range(num_slots):
-		var slot = InventorySlot.new(self, i)
-		slots.append(slot)
+	while get_child_count() < num_slots:
+		var slot = InventorySlot.new()
+		add_child(slot)
 	emit_signal("inventory_updated")
 
 
 func add_item(item: Item, amount: int = 1):
-	for i in range(slots.size()):
-		var slot = slots[i]
+	for i in range(get_children().size()):
+		var slot = get_child(i)
 		if slot.item and slot.item.name == item.name:
 			slot.amount += amount
 			emit_signal("inventory_updated")
 			return
 	
-	for i in range(slots.size()):
-		var slot = slots[i]
+	for i in range(get_children().size()):
+		var slot = get_child(i)
 		if slot.amount == 0:
 			slot.item = item
 			slot.amount = amount
@@ -40,7 +38,7 @@ func add_item(item: Item, amount: int = 1):
 func remove_item(item: Item, amount: int = 1):
 	var removed := 0
 	
-	for slot in slots:
+	for slot in get_children():
 		if slot.item and slot.item.name == item.name:
 			var to_remove = min(slot.amount, amount)
 			slot.amount -= to_remove
@@ -51,7 +49,7 @@ func remove_item(item: Item, amount: int = 1):
 
 
 func equip_slot(slot_idx: int) -> void:
-	var slot = slots[slot_idx]
+	var slot = get_child(slot_idx)
 
 	if UI.equipped_item and UI.equipped_item.slot == slot:
 		slot.equipped = false
@@ -77,7 +75,7 @@ func unequip_slot():
 # Returns whether inventory has amount of item.
 func has_item(item: Item, amount: int = 1) -> bool:
 	var total := 0
-	for slot in slots:
+	for slot in get_children():
 		if not slot.item or not item:
 			continue
 		if slot.item and slot.item.name == item.name:

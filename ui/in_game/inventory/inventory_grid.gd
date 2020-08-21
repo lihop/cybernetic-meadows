@@ -12,7 +12,7 @@ func set_inventory(new_inventory: Inventory) -> void:
 	
 	clear_grid()
 	
-	for i in range(inventory.slots.size()):
+	for i in range(inventory.get_child_count()):
 		var ui_slot = SlotScene.instance()
-		ui_slot.slot = inventory.slots[i]
+		ui_slot.slot = inventory.get_child(i)
 		grid.add_child(ui_slot)

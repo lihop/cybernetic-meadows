@@ -54,18 +54,18 @@ func _on_unequipped():
 
 
 func _on_InventorySlotUI_pressed() -> void:
-	var slot_index = slot.index
+	var slot_index = slot.get_index()
 	
 	if not UI.equipped_item:
 		slot.inventory.equip_slot(slot_index)
-	elif UI.equipped_item.slot == slot.inventory.slots[slot_index]:
+	elif UI.equipped_item.slot == slot.inventory.get_child(slot_index):
 		slot.inventory.unequip_slot()
 	elif UI.equipped_item.slot.inventory == slot.inventory:
 		slot.inventory.unequip_slot()
 		# TODO: Swap slots.
 	elif UI.equipped_item.slot.inventory != slot.inventory:
 		var equipped_slot = UI.equipped_item.slot
-		var other_slot = slot.inventory.slots[slot_index]
+		var other_slot = slot.inventory.get_child(slot_index)
 		
 		if other_slot.empty():
 			other_slot.item = equipped_slot.item
