@@ -49,10 +49,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/electric/consumer/consumer.gd"
 }, {
-"base": "Thing",
-"class": "Electronic",
 "language": "GDScript",
-"path": "res://items/electronics/electronic.gd"
 }, {
 "base": "Sprite",
 "class": "EquippedItem",
@@ -64,25 +61,13 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/resource/extractable.gd"
 }, {
-"base": "Node",
 "class": "Fuel",
 "language": "GDScript",
-"path": "res://items/nodes/fuel/fuel.gd"
-}, {
-"base": "StaticItem",
-"class": "FuelPoweredGenerator",
-"language": "GDScript",
-"path": "res://items/electronics/generators/fuel_powered_generator/fuel_powered_generator.gd"
 }, {
 "base": "Item2D",
 "class": "Furnace",
 "language": "GDScript",
 "path": "res://items/furnaces/furnace.gd"
-}, {
-"base": "Electronic",
-"class": "Generator",
-"language": "GDScript",
-"path": "res://items/electronics/generators/generator.gd"
 }, {
 "base": "CanvasLayer",
 "class": "InGameUI",
@@ -178,6 +163,16 @@ _global_script_classes=[ {
 "class": "ThingFrame",
 "language": "GDScript",
 "path": "res://ui/in_game/thing_frame/thing_frame.gd"
+}, {
+"base": "Reference",
+"class": "WAT",
+"language": "GDScript",
+"path": "res://addons/WAT/namespace.gd"
+}, {
+"base": "",
+"class": "WATTest",
+"language": "GDScript",
+"path": "res://addons/WAT/core/test/test.gd"
 } ]
 _global_script_class_icons={
 "Battery": "",
@@ -188,13 +183,10 @@ _global_script_class_icons={
 "ElectricCharger": "",
 "ElectricGenerator": "",
 "ElectricityConsumer": "",
-"Electronic": "",
 "EquippedItem": "",
 "Extractable": "",
 "Fuel": "",
-"FuelPoweredGenerator": "",
 "Furnace": "",
-"Generator": "",
 "InGameUI": "",
 "Inventory": "",
 "InventorySlot": "",
@@ -214,7 +206,21 @@ _global_script_class_icons={
 "Smelting": "",
 "Storage": "",
 "ThingFrame": ""
+"WAT": "",
+"WATTest": ""
 }
+
+[WAT]
+
+Test_Directory="res://"
+Results_Directory="res://tests/results/WAT"
+Minimize_Window_When_Running_Tests=true
+TestStrategy={
+"repeat": 1,
+"strategy": "RunAll"
+}
+Tags=PoolStringArray(  )
+Display=8
 
 [application]
 
@@ -235,7 +241,7 @@ window/size/height=1080
 
 [editor_plugins]
 
-enabled=PoolStringArray( "godot-behavior-tree-plugin" )
+enabled=PoolStringArray( "WAT", "godot-behavior-tree-plugin" )
 
 [input]
 

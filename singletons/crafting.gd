@@ -16,6 +16,8 @@ func _ready():
 
 
 func _gather_craftable_resources(path: String) -> Array:
+	# FIXME!
+	return []
 	var result := []
 	var dir := Directory.new()
 	
@@ -29,6 +31,8 @@ func _gather_craftable_resources(path: String) -> Array:
 				result += _gather_craftable_resources(subdir_path)
 			if file_name.ends_with(".res") or file_name.ends_with(".tres"):
 				var resource = load("%s/%s" % [dir.get_current_dir(), file_name])
+				if not resource is Object:
+					dir.get_next()
 				if "recipe" in resource and resource.recipe is Recipe:
 					# Remove unused ingredient and output slots.
 					for i in range(resource.recipe.ingredients.size() - 1, 0):

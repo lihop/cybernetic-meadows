@@ -14,5 +14,9 @@ mono_crash.*.json
 # Scons-specific ignores
 *.sconsign.dblite
 
+# Test-specific ignores
+tests/results/*
+.test/*
+
 # Other igonres
 .vscode/include/*

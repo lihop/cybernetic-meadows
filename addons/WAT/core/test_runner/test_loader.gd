@@ -59,14 +59,16 @@ func _load_tests() -> Array:
 	var tests: Array = []
 	for path in _tests:
 		# Can't load WAT.Test here for whatever reason
-		if path is String and not path.ends_with(".gd"):
-			path = path.substr(0, path.find(".gd") + 3)
+		if path is String and not path.ends_with(".test.gd"):
+			path = path.substr(0, path.find(".test.gd") + 8)
+		if path == "res:///":
+			continue
 		var test = load(path) if path is String else path
-		if test.get("TEST") != null:
+		if test and test.get("TEST") != null:
 			tests.append(test)
-		elif test.get("IS_WAT_SUITE") and Engine.get_version_info().minor == 2:
+		elif test and test.get("IS_WAT_SUITE") and Engine.get_version_info().minor == 2:
 			tests += _suite_of_suites_3p2(test)
-		elif test.get("IS_WAT_SUITE") and Engine.get_version_info().minor == 1:
+		elif test and test.get("IS_WAT_SUITE") and Engine.get_version_info().minor == 1:
 			tests += _suite_of_suites_3p1(test)
 	return tests
 
