@@ -3,12 +3,22 @@ class_name Inventory
 
 
 const EquippedItem = preload("res://ui/in_game/inventory/equipped_item.tscn")
-onready var UI = $"/root/World/UI"
+onready var UI = get_node_or_null("/root/World/UI")
 
 signal inventory_updated()
 signal slot_updated(slot_index)
+# Emitted when one or more items are added to the inventory
+signal items_added(items)
+
 
 export(int) var num_slots := 80
+
+# Filters determine what items can be stored in this inventory.
+var filters := []
+
+
+func _init(num_slots: int = 80):
+	self.num_slots = num_slots
 
 
 func _ready():
@@ -33,6 +43,8 @@ func add_item(item: Item, amount: int = 1):
 			slot.amount = amount
 			emit_signal("inventory_updated")
 			return
+	
+	emit_signal("items_added", item, amount)
 
 
 func remove_item(item: Item, amount: int = 1):
@@ -81,3 +93,51 @@ func has_item(item: Item, amount: int = 1) -> bool:
 		if slot.item and slot.item.name == item.name:
 			total += slot.amount
 	return total > 0
+
+
+func add_filter(filter: FuncRef) -> void:
+	filters.append(filter)
+
+
+func can_insert(items: Dictionary) -> bool:
+	for item in items.keys():
+		for filter in filters:
+			if not filter.call_func(item):
+				return false
+	return true
+
+
+func insert(items: Dictionary) -> int:
+	# TODO: Implement me properly.
+	var total = 0
+	for item in items.keys():
+		add_item(item, items[item])
+		total += items[item]
+	return total
+
+
+func empty() -> bool:
+	for slot in get_children():
+		if slot.amount > 0:
+			return false
+	return true
+
+
+func get_contents() -> Dictionary:
+	var contents := {}
+	for slot in get_children():
+		if slot.item:
+			if contents.has(slot.item):
+				contents[slot.item] += slot.amount
+			else:
+				contents[slot.item] = slot.amount
+	return contents
+
+
+func remove(items: Dictionary) -> int:
+	var total_removed := 0
+	for item in items.keys():
+		if has_item(item, items[item]):
+			remove_item(item, items[item])
+			total_removed += items[item]
+	return total_removed

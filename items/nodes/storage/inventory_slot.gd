@@ -39,13 +39,18 @@ func set_item(new_item: Item) -> void:
 	if item != new_item:
 		item = new_item
 		emit_signal("item_changed", new_item)
+		get_parent().emit_signal("inventory_updated")
 		get_parent().emit_signal("slot_updated", index)
 
 func set_amount(new_amount: int) -> void:
+	var old_amount = amount
 	if amount != new_amount:
 		amount = new_amount
 		emit_signal("amount_changed", new_amount)
+		get_parent().emit_signal("inventory_updated")
 		get_parent().emit_signal("slot_updated", index)
+		if amount - old_amount > 0:
+			get_parent().emit_signal("items_added", {item: amount - old_amount})
 		if amount <= 0:
 			self.item = null
 			emit_signal("emptied")

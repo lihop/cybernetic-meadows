@@ -19,15 +19,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/misc/blueprint.gd"
 }, {
+"base": "EnergySource",
+"class": "BurnerEnergySource",
+"language": "GDScript",
+"path": "res://items/nodes/energy/burner_energy_source.gd"
+}, {
 "base": "Node",
 "class": "Conduit",
 "language": "GDScript",
 "path": "res://items/nodes/electric/conduit/conduit.gd"
 }, {
 "base": "Node",
-"class": "CraftingNode",
+"class": "Crafting",
 "language": "GDScript",
-"path": "res://items/nodes/crafting/crafting_node.gd"
+"path": "res://items/nodes/crafting/crafting.gd"
+}, {
+"base": "Crafting",
+"class": "CraftingMachine",
+"language": "GDScript",
+"path": "res://items/nodes/crafting/crafting_machine.gd"
 }, {
 "base": "Item2D",
 "class": "DroppedItem",
@@ -49,7 +59,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/electric/consumer/consumer.gd"
 }, {
+"base": "Node",
+"class": "EnergySource",
 "language": "GDScript",
+"path": "res://items/nodes/energy/energy_source.gd"
 }, {
 "base": "Sprite",
 "class": "EquippedItem",
@@ -61,13 +74,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/resource/extractable.gd"
 }, {
-"class": "Fuel",
-"language": "GDScript",
-}, {
 "base": "Item2D",
 "class": "Furnace",
 "language": "GDScript",
 "path": "res://items/furnaces/furnace.gd"
+}, {
+"base": "CraftingMachine",
+"class": "FurnaceCraftingMachine",
+"language": "GDScript",
+"path": "res://items/furnaces/furnace_crafting_machine.gd"
 }, {
 "base": "CanvasLayer",
 "class": "InGameUI",
@@ -149,11 +164,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://singletons/data/recipe_data.gd"
 }, {
-"base": "Node",
-"class": "Smelting",
-"language": "GDScript",
-"path": "res://items/furnaces/smelting.gd"
-}, {
 "base": "Item2D",
 "class": "Storage",
 "language": "GDScript",
@@ -177,16 +187,19 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Battery": "",
 "Blueprint": "",
+"BurnerEnergySource": "",
 "Conduit": "",
-"CraftingNode": "",
+"Crafting": "",
+"CraftingMachine": "",
 "DroppedItem": "",
 "ElectricCharger": "",
 "ElectricGenerator": "",
 "ElectricityConsumer": "",
+"EnergySource": "",
 "EquippedItem": "",
 "Extractable": "",
-"Fuel": "",
 "Furnace": "",
+"FurnaceCraftingMachine": "",
 "InGameUI": "",
 "Inventory": "",
 "InventorySlot": "",
@@ -203,9 +216,8 @@ _global_script_class_icons={
 "RawMaterial": "",
 "Recipe": "",
 "RecipeData": "",
-"Smelting": "",
 "Storage": "",
-"ThingFrame": ""
+"ThingFrame": "",
 "WAT": "",
 "WATTest": ""
 }
@@ -231,7 +243,6 @@ config/icon="res://icon.png"
 [autoload]
 
 Notifications="*res://singletons/notifications.gd"
-Crafting="*res://singletons/crafting.gd"
 Data="*res://singletons/data/data.gd"
 
 [display]

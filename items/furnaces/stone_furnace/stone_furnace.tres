@@ -1,83 +1,13 @@
-[gd_resource type="Resource" load_steps=5 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://items/item_resource.gd" type="Script" id=1]
-[ext_resource path="res://items/recipe_resource.gd" type="Script" id=2]
 [ext_resource path="res://items/furnaces/stone_furnace/assets/stone_furnace_icon.png" type="Texture" id=4]
-
-[sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
-enabled = false
-energy_required = 0.0
-method = 0
-ingredients = [ {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-} ]
-products = [ {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-}, {
-"item": null,
-"quantity": 0
-} ]
 
 [resource]
 script = ExtResource( 1 )
 display_name = "Stone Furnace"
 name = "stone_furnace"
 icon = ExtResource( 4 )
-recipe = SubResource( 1 )
 scene_path = "res://items/furnaces/stone_furnace/stone_furnace.tscn"
 placeable = true
 energy = 0.0

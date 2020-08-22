@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/processed_materials/stone_brick/assets/stone_brick.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+display_name = "Stone Brick"
+name = "stone_brick"
+icon = ExtResource( 2 )
+scene_path = "res://items/processed_materials/stone_brick/stone_brick.tscn"
+placeable = false
+energy = 0.0
