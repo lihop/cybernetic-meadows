@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://items/furnaces/stone_furnace/stone_furnace.tres" type="Resource" id=1]
+[ext_resource path="res://items/recipe_resource.gd" type="Script" id=2]
+[ext_resource path="res://items/raw_materials/stone/stone.tres" type="Resource" id=3]
+
+[resource]
+script = ExtResource( 2 )
+enabled = true
+energy_required = 0.5
+method = 0
+ingredients = [ {
+"item": ExtResource( 3 ),
+"quantity": 5
+} ]
+products = [ {
+"item": ExtResource( 1 ),
+"quantity": 1
+} ]
