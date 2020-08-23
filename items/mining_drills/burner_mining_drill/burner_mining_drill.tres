@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/mining_drills/burner_mining_drill/assets/burner_mining_drill_icon.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+display_name = "Burner Mining Drill"
+name = "burner_mining_drill"
+icon = ExtResource( 2 )
+scene_path = "res://items/mining_drills/burner_mining_drill/burner_mining_drill.tscn"
+placeable = true
+energy = 0.0

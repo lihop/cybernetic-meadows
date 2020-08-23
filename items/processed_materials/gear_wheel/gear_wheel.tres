@@ -1,12 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://items/item_resource.gd" type="Script" id=1]
-[ext_resource path="res://items/processed_materials/iron_plate/assets/iron_plate.png" type="Texture" id=2]
+[ext_resource path="res://items/processed_materials/gear_wheel/assets/gear_wheel.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-display_name = "Iron Plate"
-name = "iron_plate"
+display_name = "Gear Wheel"
+name = "gear_wheel"
 icon = ExtResource( 2 )
 scene_path = "res://items/processed_materials/processed_material.tscn"
 placeable = false

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://items/recipe_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/processed_materials/gear_wheel/gear_wheel.tres" type="Resource" id=2]
+[ext_resource path="res://items/processed_materials/iron_plate/iron_plate.tres" type="Resource" id=3]
+
+[resource]
+script = ExtResource( 1 )
+enabled = true
+energy_required = 0.5
+method = 0
+ingredients = [ {
+"item": ExtResource( 3 ),
+"quantity": 2
+} ]
+products = [ {
+"item": ExtResource( 2 ),
+"quantity": 1
+} ]

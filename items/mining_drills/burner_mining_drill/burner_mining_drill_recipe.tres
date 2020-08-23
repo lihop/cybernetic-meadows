@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=6 format=2]
+
+[ext_resource path="res://items/furnaces/stone_furnace/stone_furnace.tres" type="Resource" id=1]
+[ext_resource path="res://items/recipe_resource.gd" type="Script" id=2]
+[ext_resource path="res://items/processed_materials/gear_wheel/gear_wheel.tres" type="Resource" id=3]
+[ext_resource path="res://items/mining_drills/burner_mining_drill/burner_mining_drill.tres" type="Resource" id=4]
+[ext_resource path="res://items/processed_materials/iron_plate/iron_plate.tres" type="Resource" id=5]
+
+[resource]
+script = ExtResource( 2 )
+enabled = true
+energy_required = 2.0
+method = 0
+ingredients = [ {
+"item": ExtResource( 3 ),
+"quantity": 3
+}, {
+"item": ExtResource( 5 ),
+"quantity": 3
+}, {
+"item": ExtResource( 1 ),
+"quantity": 1
+} ]
+products = [ {
+"item": ExtResource( 4 ),
+"quantity": 1
+} ]

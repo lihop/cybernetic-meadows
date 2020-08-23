@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://items/item_resource.gd" type="Script" id=1]
+[ext_resource path="res://items/natural_resources/iron_deposit/assets/iron_deposit.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+display_name = "Iron Deposit"
+name = "iron_deposit"
+icon = ExtResource( 2 )
+scene_path = "res://items/natural_resources/iron_deposit/iron_deposit.tscn"
+placeable = false
+energy = 0.0
