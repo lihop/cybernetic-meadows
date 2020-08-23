@@ -8,7 +8,6 @@ var recipes := []
 func find(query: Dictionary) -> RecipeData:
 	var result: RecipeData = get_script().new()
 	result.recipes = recipes.duplicate()
-	print(query.has("method"))
 	if query.has("method"):
 		result.recipes = filter(result.recipes, "method", query.method)
 	return result

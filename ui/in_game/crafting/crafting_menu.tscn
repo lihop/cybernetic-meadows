@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://ui/in_game/grids/item_grid.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ui/in_game/crafting/crafting_menu.gd" type="Script" id=2]
+[ext_resource path="res://items/nodes/crafting/crafting.gd" type="Script" id=3]
 
 [node name="CraftingMenu" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -15,3 +16,7 @@ text = "Crafting"
 
 [node name="GridContainer" parent="VBoxContainer" index="1"]
 margin_right = 48.0
+
+[node name="Crafting" type="Node" parent="." index="1"]
+script = ExtResource( 3 )
+[connection signal="output_transferred" from="Crafting" to="." method="_on_Crafting_output_transferred"]

@@ -4,7 +4,7 @@ class_name Crafting
 
 signal started()
 signal stopped()
-signal product_produced()
+signal output_transferred()
 
 export(float) var crafting_speed := 1.0
 export(int) var input_slots := 1
@@ -80,6 +80,7 @@ func _transfer_outputs():
 	if output_inventory.can_insert(outputs):
 		output_inventory.insert(outputs)
 		outputs = {}
+		emit_signal("output_transferred")
 	else:
 		# Output inventory is full. We need to stop processing until we can
 		# get rid of our current outputs.
@@ -94,7 +95,7 @@ func _refill_inputs():
 		var contents = input_inventory.get_contents()
 		inputs = {}
 		for ingredient in recipe.ingredients:
-			if contents.has(ingredient.item) and contents[ingredient.item] > ingredient.quantity:
+			if contents.has(ingredient.item) and contents[ingredient.item] >= ingredient.quantity:
 				inputs[ingredient.item] = ingredient.quantity
 			else:
 				self.on = false
@@ -105,3 +106,13 @@ func _refill_inputs():
 
 func _on_items_added(_items):
 	_refill_inputs()
+
+
+func can_craft(recipe: Recipe) -> bool:
+	var ingredients = recipe.ingredients
+	var contents = input_inventory.get_contents()
+	for ingredient in ingredients:
+		if not contents.has(ingredient.item) or \
+				contents[ingredient.item] < ingredient.quantity:
+			return false
+	return true

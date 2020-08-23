@@ -54,6 +54,9 @@ func _on_unequipped():
 
 
 func _on_InventorySlotUI_pressed() -> void:
+	if not slot:
+		return
+	
 	var slot_index = slot.get_index()
 	
 	if not UI.equipped_item:
