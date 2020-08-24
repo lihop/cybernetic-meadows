@@ -1,0 +1,125 @@
+The Raku bug (known as Camelia) is the mascot of the Raku (formerly Perl 6)
+programming language. The image is released under the following conditions
+(from https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt):
+
+________________________________________________________________________________
+
+Camelia
+
+The Camelia image is copyright 2009 by Larry Wall.  Permission to use
+is granted under the Artistic License 2.0, or any subsequent version
+of the Artistic License.
+
+The Camelia image is a trademark of Larry Wall, and permission is
+granted for non-exclusive use to label anything related to Perl 6,
+provided the image is labeled as a trademark when used as a main logo
+on a page.  (It is not necessary to so label icons, or other casual
+uses not related to business.)  Such labeling may be done either by
+footnote or with a TM mark.
+
+It is recommended that such a TM mark be in a light but visible color
+of gray.
+
+Notes
+-----
+
+Camelia is intended primarily to represent Perl 6, The Language,
+not any other aspect of Perl 6 culture, corporate or otherwise.
+In particular, various implementations and distributions are free to
+use their own logos and/or mascots.
+
+Certain variants are also permissible; since Camelia knows how to
+change her wing colors at will, any color scheme (or lack thereof)
+in the same pattern is fine.  She just happens to like bright colors
+most of the time because they make her happy.  But she's willing to
+blend in where necessary. :)
+
+Going to the other extreme, a textual variant also exists:
+
+    »ö«
+
+Many other variants are possible.  Have fun.  Good taste and positive
+connotations are encouraged, but cannot of course be required.
+
+Those of you who think the current design does not reflect good taste
+are entitled to your opinion.  We will certainly allow you to change
+your mind later as you grow younger.  :)
+
+Online resources
+================
+* http://www.nntp.perl.org/group/perl.perl6.language/2009/03/msg31263.html
+* http://www.nntp.perl.org/group/perl.perl6.language/2009/03/msg31300.html
+
+
+Discussion Highlights
+=====================
+
+From: Larry Wall
+Date: March 24, 2009 10:25
+Subject: Re: Logo considerations
+
+[...] I think there's a tendency to
+go way too abstract in most of these proposals.  I want something
+with gut appeal on the order of Tux.  In particular I want a logo
+for Perl 6 that is:
+
+    Fun
+    Cool
+    Cute
+    Named
+    Lively
+    Punable
+    Personal
+    Concrete
+    Symmetric
+    Asymmetric
+    Attractive
+    Relational
+    Metamorphic
+    Decolorizable
+    Shrinkable to textual icon
+    Shrinkable to graphical icon
+
+In addition, you can extend just about anything by attaching "P6"
+wings to it.  I also take it as a given that we want to discourage
+misogyny in our community.  You of the masculine persuasion should
+consider it an opportunity to show off your sensitive side.  :)
+
+Hence, Camelia.
+
+Larry
+
+----
+
+From: Larry Wall
+Date: March 25, 2009 11:28
+Subject: Re: Logo considerations - 3 logos needed
+
+On Wed, Mar 25, 2009 at 08:54:34AM -0400, ______ wrote:
+: I think he was offering it as an example and a suggestion.  The perl6
+: community might favor it out of respect for Larry but I think he went
+: out of his way to make it clear that it's the kind of thing he would
+: like.
+
+Yes, I went out of my way to indicate that my mind was still open
+(a little).  However, if you will allow an old geezer to be a wee bit
+testy, I would also like to make it clear that I'm a just a little
+tired of these "rounds"; more importantly, that I've been mulling
+over this particular issue for many years.  I didn't just come up
+with that list of requirements off the cuff.  I'm old enough to have
+lots of stuff on my cuff as well.
+
+Also, it's probably mere hubris, but I already consider myself to be a
+"professional designer".  I know how to take into account the various
+factors that a professional designer would take into account when
+designing yet another highly original logo that somehow ends up looking
+just like every other logo out there.  You'll notice that "sterility"
+is not on my list of requirements.  It was a deliberate omission.
+
+So let me summarize the requirements into a meta-requirement:
+
+    The new logo must make Larry at least as happy as Camelia does.
+
+That is the extent to which my mind is still open...  :-)
+
+Larry
