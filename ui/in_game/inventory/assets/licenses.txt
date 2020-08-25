@@ -1,1 +1,4 @@
-hand-20.svg, from https://openclipart.org/download/167377/hand-20.svg by dripsandcastle, released under CC-0
+hand-20.svg
+dripsandcastle
+CC-0
+https://openclipart.org/download/167377/hand-20.svg

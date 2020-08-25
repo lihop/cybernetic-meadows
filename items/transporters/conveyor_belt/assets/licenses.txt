@@ -1,1 +1,4 @@
-factory_tileset.png, from https://opengameart.org/content/factory-tileset by Kenney, released under CC-0
+factory_tileset.png
+Kenney
+CC-0
+https://opengameart.org/content/factory-tileset
