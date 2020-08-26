@@ -1,0 +1,24 @@
+# original LPC shape
+tilesets/mountains/automapping/rule_mountains_001.tmx
+tilesets/mountains/automapping/rule_mountains_002.tmx
+tilesets/mountains/automapping/rule_mountains_003.tmx
+tilesets/mountains/automapping/rule_mountains_004.tmx
+tilesets/mountains/automapping/rule_mountains_005.tmx
+tilesets/mountains/automapping/rule_mountains_006.tmx
+tilesets/mountains/automapping/rule_mountains_007.tmx
+tilesets/mountains/automapping/rule_mountains_008.tmx
+tilesets/mountains/automapping/rule_mountains_009.tmx
+tilesets/mountains/automapping/rule_mountains_010.tmx
+tilesets/mountains/automapping/rule_mountains_011.tmx
+tilesets/mountains/automapping/rule_mountains_012.tmx
+tilesets/mountains/automapping/rule_mountains_013.tmx
+tilesets/mountains/automapping/rule_mountains_014.tmx
+tilesets/mountains/automapping/rule_mountains_015.tmx
+
+# 9-tile shape
+tilesets/mountains/automapping/rule_mountains_101.tmx
+
+
+# Round Cliffs (Jetrel)
+tilesets/mountains/automapping/rule_mountains_201.tmx
+tilesets/mountains/automapping/rule_mountains_202.tmx

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/terrain-v7.png-c8d40ad3aeab8d5c81de59e93f2baba3.stex"
+path="res://.import/terrain_map_v7.png-eaa7ab8beccd716797ed33eb9d23b9a4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://locations/assets/terrain/terrain-v7.png"
-dest_files=[ "res://.import/terrain-v7.png-c8d40ad3aeab8d5c81de59e93f2baba3.stex" ]
+source_file="res://maps/tilesets/terrain/terrain_map_v7.png"
+dest_files=[ "res://.import/terrain_map_v7.png-eaa7ab8beccd716797ed33eb9d23b9a4.stex" ]
 
 [params]
 

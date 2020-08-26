@@ -122,7 +122,7 @@ _global_script_classes=[ {
 "base": "TileMap",
 "class": "Map2D",
 "language": "GDScript",
-"path": "res://map/map.gd"
+"path": "res://maps/map.gd"
 }, {
 "base": "Item2D",
 "class": "NaturalResource",
@@ -237,7 +237,7 @@ Display=8
 [application]
 
 config/name="Cybernetic Meadows"
-run/main_scene="res://map/example_map.tscn"
+run/main_scene="res://maps/example_map.tscn"
 config/icon="res://icon.png"
 
 [autoload]

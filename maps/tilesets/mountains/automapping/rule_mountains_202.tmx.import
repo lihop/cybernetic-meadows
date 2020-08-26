@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/rule_mountains_202.tmx-1453dfa7b4ace70a05c97bcb39a3ea04.scn"
+
+[deps]
+
+source_file="res://maps/tilesets/mountains/automapping/rule_mountains_202.tmx"
+dest_files=[ "res://.import/rule_mountains_202.tmx-1453dfa7b4ace70a05c97bcb39a3ea04.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""
