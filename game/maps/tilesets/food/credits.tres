@@ -1,0 +1,143 @@
+[gd_resource type="Resource" load_steps=26 format=2]
+
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=2]
+[ext_resource path="res://credits/people/joshua_taylor.tres" type="Resource" id=3]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=4]
+[ext_resource path="res://credits/people/bluecarrot16.tres" type="Resource" id=5]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=6]
+[ext_resource path="res://maps/tilesets/food/food.png" type="Texture" id=7]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=8]
+[ext_resource path="res://credits/people/red_voxel.tres" type="Resource" id=9]
+[ext_resource path="res://credits/people/thekingphoenix.tres" type="Resource" id=10]
+[ext_resource path="res://credits/people/daneeklu.tres" type="Resource" id=11]
+[ext_resource path="res://credits/people/jetrel.tres" type="Resource" id=12]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=13]
+[ext_resource path="res://credits/people/molly_willits.tres" type="Resource" id=14]
+[ext_resource path="res://addons/godot_credits/licenses/OGA-BY-3.0.tres" type="Resource" id=15]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-2.0-or-later.tres" type="Resource" id=16]
+[ext_resource path="res://credits/people/tebruno99.tres" type="Resource" id=17]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+title = "[LPC] Farming tilesets, magic animations and UI elements"
+files = [  ]
+licenses = [ ExtResource( 6 ), ExtResource( 4 ) ]
+authors = [ ExtResource( 11 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+title = "Fruit and Veggie Inventory"
+files = [  ]
+licenses = [ ExtResource( 6 ), ExtResource( 4 ) ]
+authors = [ ExtResource( 3 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/fruit-and-veggie-inventory" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+title = "RPG item set"
+files = [  ]
+licenses = [ ExtResource( 8 ) ]
+authors = [ ExtResource( 12 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/rpg-item-set" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 1 )
+title = "Icons: Food."
+files = [  ]
+licenses = [ ExtResource( 8 ) ]
+authors = [ ExtResource( 10 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray(  )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 1 )
+title = "Food Items 16x16"
+files = [  ]
+licenses = [ ExtResource( 8 ) ]
+authors = [ ExtResource( 9 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/food-items-16x16" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 1 )
+title = "Chicken and Pork Icon Pack"
+files = [  ]
+licenses = [ ExtResource( 13 ), ExtResource( 15 ) ]
+authors = [ ExtResource( 14 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/chicken-and-pork-icon-pack" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 1 )
+title = "LPC style farm animals"
+files = [  ]
+licenses = [ ExtResource( 13 ), ExtResource( 16 ) ]
+authors = [ ExtResource( 11 ) ]
+commissioners = [ ExtResource( 17 ) ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-style-farm-animals" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 1 )
+title = "[LPC] Foods"
+files = [ ExtResource( 7 ) ]
+licenses = [ ExtResource( 6 ), ExtResource( 4 ) ]
+authors = [ ExtResource( 5 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 14 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-food" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 7 ), SubResource( 8 ) ]
+
+[resource]
+script = ExtResource( 2 )
+credits = [ SubResource( 6 ) ]

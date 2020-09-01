@@ -1,0 +1,138 @@
+[gd_resource type="Resource" load_steps=27 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/credit.gd" type="Script" id=2]
+[ext_resource path="res://locations/church_of_emacs/assets/castle8.png" type="Texture" id=3]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=4]
+[ext_resource path="res://credits/people/bluecarrot16.tres" type="Resource" id=5]
+[ext_resource path="res://credits/people/hyptosis.tres" type="Resource" id=6]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=7]
+[ext_resource path="res://credits/people/zabin.tres" type="Resource" id=8]
+[ext_resource path="res://credits/people/daniel_cook.tres" type="Resource" id=9]
+[ext_resource path="res://credits/people/sharm.tres" type="Resource" id=10]
+[ext_resource path="res://credits/people/xenodora.tres" type="Resource" id=11]
+[ext_resource path="res://credits/people/evert.tres" type="Resource" id=12]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=13]
+[ext_resource path="res://credits/people/theidiotmachine.tres" type="Resource" id=14]
+[ext_resource path="res://credits/people/daniel_armstrong.tres" type="Resource" id=15]
+[ext_resource path="res://locations/church_of_emacs/assets/emacs_icon.png" type="Texture" id=16]
+[ext_resource path="res://credits/people/leroy_hopson.tres" type="Resource" id=17]
+[ext_resource path="res://credits/people/nicholas_petton.tres" type="Resource" id=18]
+
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+title = "Castle Tiles for RPG's"
+files = [  ]
+licenses = [ ExtResource( 7 ) ]
+authors = [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/castle-tiles-for-rpgs" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+title = "LPC castle"
+files = [  ]
+licenses = [ ExtResource( 7 ) ]
+authors = [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/lpc-castle" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+title = "LPC Style Well"
+files = [  ]
+licenses = [ ExtResource( 7 ), ExtResource( 13 ) ]
+authors = [ ExtResource( 11 ), ExtResource( 10 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/lpc-style-well" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+title = "Another LPC style castle"
+files = [  ]
+licenses = [ ExtResource( 4 ) ]
+authors = [ ExtResource( 14 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/another-lpc-style-castle" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+title = "LPC Base Assets (castlewalls.png, castle_outside.png)"
+files = [  ]
+licenses = [ ExtResource( 4 ), ExtResource( 13 ) ]
+authors = [ ExtResource( 15 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "LPC Castle Mega-Pack"
+files = [ ExtResource( 3 ) ]
+licenses = [ ExtResource( 4 ) ]
+authors = [ ExtResource( 5 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "http://opengameart.org/content/lpc-castle-mega-pack" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 2 )
+title = "Emacs Icon"
+files = [  ]
+licenses = [ ExtResource( 13 ) ]
+authors = [ ExtResource( 18 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://commons.wikimedia.org/wiki/File:EmacsIcon.svg" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+title = "Pixel Art Emacs Icon"
+files = [ ExtResource( 16 ), "./emacs_icon.pxo" ]
+licenses = [ ExtResource( 13 ) ]
+authors = [ ExtResource( 17 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray(  )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 8 ) ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ), SubResource( 7 ) ]

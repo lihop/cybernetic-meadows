@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mystery_bazaar.ogg-db62a5afe68cd627a7d30f599df9b7ff.oggstr"
+
+[deps]
+
+source_file="res://locations/bazaar/assets/mystery_bazaar.ogg"
+dest_files=[ "res://.import/mystery_bazaar.ogg-db62a5afe68cd627a7d30f599df9b7ff.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://addons/godot_credits/credit.gd" type="Script" id=1]
+[ext_resource path="res://animals/raku_bug/assets/camelia.png" type="Texture" id=2]
+[ext_resource path="res://addons/godot_credits/licenses/Artistic-2.0.tres" type="Resource" id=3]
+[ext_resource path="res://credits/people/leroy_hopson.tres" type="Resource" id=4]
+[ext_resource path="res://credits/people/larry_wall.tres" type="Resource" id=5]
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=6]
+
+
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+title = "Camelia"
+files = [  ]
+licenses = [ ExtResource( 3 ) ]
+authors = [ ExtResource( 5 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://commons.wikimedia.org/wiki/File:Camelia.svg" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+title = "Camelia Spritesheet"
+files = [ ExtResource( 2 ), "./camelia.pxo" ]
+licenses = [ ExtResource( 3 ) ]
+authors = [ ExtResource( 4 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray(  )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 1 ) ]
+
+[resource]
+script = ExtResource( 6 )
+credits = [ SubResource( 2 ) ]

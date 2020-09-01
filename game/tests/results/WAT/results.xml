@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<testsuites failures="0" name="TestXML" tests="3" time="0.339">
+<testsuite failures="0" name="Inventory" tests="8" time="0.001">
+<testcase name="Returns false if the item does not match the filter" time="0">
+</testcase>
+<testcase name="Returns false if at least one slot in the the inventory has some amount of item" time="0">
+</testcase>
+<testcase name="Returns true if there are no filters on the inventory" time="0">
+</testcase>
+<testcase name="Returns true if the item matches the filter" time="0">
+</testcase>
+<testcase name="Removes items from inventory" time="0.001">
+</testcase>
+<testcase name="Returns an empty dictionary if the inventory is empty" time="0">
+</testcase>
+<testcase name="Returns true if the every slot in the inventory is empty" time="0.001">
+</testcase>
+<testcase name="Returns a dictionary containing the counts of items contained in the inventory" time="0">
+</testcase>
+</testsuite>
+<testsuite failures="0" name="BurnerEnergySource" tests="3" time="0.002">
+<testcase name="Refuels when fuel added to inventory" time="0">
+</testcase>
+<testcase name="Refuels until inventory is empty" time="0.001">
+</testcase>
+<testcase name="Uses energy after being refueled" time="0.021">
+</testcase>
+</testsuite>
+<testsuite failures="0" name="TEST GROUP NAME" tests="1" time="0.001">
+<testcase name="TEST DESCRIPTION" time="0">
+</testcase>
+</testsuite>
+</testsuites>

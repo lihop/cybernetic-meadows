@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=2]
+[ext_resource path="res://ui/assets/cursor_grey_arrow.png" type="Texture" id=3]
+[ext_resource path="res://ui/assets/cursor_grey_hand.png" type="Texture" id=4]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=5]
+[ext_resource path="res://ui/assets/UIpackSheet_transparent.svg" type="Texture" id=6]
+[ext_resource path="res://credits/people/kenney.tres" type="Resource" id=7]
+[ext_resource path="res://credits/people/lynn_evers.tres" type="Resource" id=8]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+title = "Pixel UI pack"
+files = [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 4 ) ]
+licenses = [ ExtResource( 5 ) ]
+authors = [ ExtResource( 7 ) ]
+commissioners = [  ]
+other_contributors = [ ExtResource( 8 ) ]
+sources = PoolStringArray( "https://opengameart.org/content/pixel-ui-pack-750-assets" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[resource]
+script = ExtResource( 2 )
+credits = [ SubResource( 1 ) ]

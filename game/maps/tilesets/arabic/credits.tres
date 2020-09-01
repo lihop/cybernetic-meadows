@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=2]
+[ext_resource path="res://maps/tilesets/arabic/arabic.png" type="Texture" id=3]
+[ext_resource path="res://credits/people/sharm.tres" type="Resource" id=4]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-4.0.tres" type="Resource" id=5]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-2.0-or-later.tres" type="Resource" id=6]
+[ext_resource path="res://credits/people/william_thompson.tres" type="Resource" id=7]
+[ext_resource path="res://addons/godot_credits/licenses/OGA-BY-3.0.tres" type="Resource" id=8]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=9]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=10]
+
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "[LPC] Arabic Elements"
+files = [ ExtResource( 3 ) ]
+licenses = [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 8 ) ]
+authors = [ ExtResource( 4 ) ]
+commissioners = [ ExtResource( 7 ) ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-arabic-elements" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

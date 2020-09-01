@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/freesoftwaresong_organ-kalimba.ogg-b684cf7d2695f991a7335f0f32c1b20a.oggstr"
+
+[deps]
+
+source_file="res://credits/assets/freesoftwaresong_organ-kalimba.ogg"
+dest_files=[ "res://.import/freesoftwaresong_organ-kalimba.ogg-b684cf7d2695f991a7335f0f32c1b20a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

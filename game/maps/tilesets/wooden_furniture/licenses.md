@@ -1,0 +1,38 @@
+<!--- Do not modify this file! It was generated from credits.tres --->
+
+### [[LPC] Wooden Furniture](https://opengameart.org/content/lpc-wooden-furniture)  
+**Authors**: bluecarrot16  
+**Licenses**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+**Files**: [blonde_wood.png](/game/maps/tilesets/wooden_furniture/blonde_wood.png), [dark_wood.png](/game/maps/tilesets/wooden_furniture/dark_wood.png)  
+**Derived from**:  
+  - ### [Base Tiles (cabinet.png, country.png, victoria.png)](http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
+    **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+    **Notes**: Distrubuted as part of Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)  
+  - ### [LPC: Modified base tiles](http://opengameart.org/content/lpc-modified-base-tiles)  
+    **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+    **Commissioners**: William Thompson (William.Thompsonj)  
+    **Licenses**: [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html), [OGA-BY-3.0](https://static.opengameart.org/OGA-BY-3.0.txt)  
+  - ### [[LPC] House interior and decorations](https://opengameart.org/content/lpc-house-interior-and-decorations)  
+    **Authors**: [Tuomo Untinen (Reemax)](https://opengameart.org/users/reemax)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html), [GPL-2.0-or-later](https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html)  
+  - ### [Flowers, buildings and boxes; Interior wooden tiles; some old castle stuff](https://opengameart.org/content/flowers-buildings-and-boxes-interior-wooden-tiles-some-old-castle-stuff)  
+    **Authors**: Guido Bos  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [[LPC] Dungeon Elements](https://opengameart.org/content/lpc-dungeon-elements)  
+    **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+    **Commissioners**: William Thompson (William.Thompsonj)  
+    **Licenses**: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode), [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html), [GPL-2.0-or-later](https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html), [OGA-BY-3.0](https://static.opengameart.org/OGA-BY-3.0.txt)  
+  - ### [LPC: Interior Castle Tiles](https://opengameart.org/content/lpc-interior-castle-tiles)  
+    **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+    **Licenses**: [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html), [OGA-BY-3.0](https://static.opengameart.org/OGA-BY-3.0.txt)  
+  - ### [Home Objects](https://opengameart.org/content/home-objects)  
+    **Authors**: [Janna (Jannax)](https://opengameart.org/users/jannax)  
+    **Licenses**: [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)  
+  - ### [[LPC] Clock Animation](https://opengameart.org/content/lpc-clock-animation)  
+    **Authors**: William Thompson (William.Thompsonj)  
+    **Licenses**: [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+    **Derived from**:  
+    - ### [LPC: Interior Castle Tiles](https://opengameart.org/content/lpc-interior-castle-tiles)  
+        **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+        **Licenses**: [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html), [OGA-BY-3.0](https://static.opengameart.org/OGA-BY-3.0.txt)  

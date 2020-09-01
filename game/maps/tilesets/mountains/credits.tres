@@ -1,0 +1,237 @@
+[gd_resource type="Resource" load_steps=64 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_015.tmx" type="PackedScene" id=2]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_001.tmx" type="PackedScene" id=3]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_006.tmx" type="PackedScene" id=4]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_012.tmx" type="PackedScene" id=5]
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=6]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_013.tmx" type="PackedScene" id=7]
+[ext_resource path="res://maps/tilesets/mountains/mountains_v6.png" type="Texture" id=8]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_005.tmx" type="PackedScene" id=9]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_101.tmx" type="PackedScene" id=10]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_011.tmx" type="PackedScene" id=11]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_008.tmx" type="PackedScene" id=12]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_014.tmx" type="PackedScene" id=13]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_010.tmx" type="PackedScene" id=14]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_003.tmx" type="PackedScene" id=15]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_004.tmx" type="PackedScene" id=16]
+[ext_resource path="res://maps/tilesets/mountains/mountains_v6.tsx" type="TileSet" id=17]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_002.tmx" type="PackedScene" id=18]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_007.tmx" type="PackedScene" id=19]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_201.tmx" type="PackedScene" id=20]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_202.tmx" type="PackedScene" id=21]
+[ext_resource path="res://maps/tilesets/mountains/automapping/rule_mountains_009.tmx" type="PackedScene" id=22]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=23]
+[ext_resource path="res://credits/people/bluecarrot16.tres" type="Resource" id=24]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=25]
+[ext_resource path="res://credits/people/hyptosis.tres" type="Resource" id=26]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=27]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-4.0.tres" type="Resource" id=28]
+[ext_resource path="res://credits/people/elizawy.tres" type="Resource" id=29]
+[ext_resource path="res://credits/people/open_pixel_project.tres" type="Resource" id=30]
+[ext_resource path="res://credits/people/jetrel.tres" type="Resource" id=31]
+[ext_resource path="res://credits/people/zabin.tres" type="Resource" id=32]
+[ext_resource path="res://credits/people/sharm.tres" type="Resource" id=33]
+[ext_resource path="res://credits/people/saphy.tres" type="Resource" id=34]
+[ext_resource path="res://credits/people/daneeklu.tres" type="Resource" id=35]
+[ext_resource path="res://credits/people/redshrike.tres" type="Resource" id=36]
+[ext_resource path="res://credits/people/bertram.tres" type="Resource" id=37]
+[ext_resource path="res://credits/people/daniel_cook.tres" type="Resource" id=38]
+[ext_resource path="res://credits/people/gaurav_munjal.tres" type="Resource" id=39]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-4.0.tres" type="Resource" id=40]
+[ext_resource path="res://credits/people/open_surge_team.tres" type="Resource" id=41]
+[ext_resource path="res://credits/people/george_bailey.tres" type="Resource" id=42]
+[ext_resource path="res://credits/people/rayane_flx.tres" type="Resource" id=43]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=44]
+[ext_resource path="res://credits/people/buch.tres" type="Resource" id=45]
+[ext_resource path="res://credits/people/bagzie.tres" type="Resource" id=46]
+[ext_resource path="res://credits/people/ivan_morve.tres" type="Resource" id=47]
+[ext_resource path="res://credits/people/leonard_pabin.tres" type="Resource" id=48]
+[ext_resource path="res://credits/people/crush.tres" type="Resource" id=49]
+[ext_resource path="res://credits/people/reid_yaro.tres" type="Resource" id=50]
+[ext_resource path="res://credits/people/narnerzz.tres" type="Resource" id=51]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 6 )
+title = "Liberated Pixel Cup (LPC) Base Assets"
+files = [  ]
+licenses = [ ExtResource( 25 ), ExtResource( 23 ), ExtResource( 27 ) ]
+authors = [ ExtResource( 33 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 6 )
+title = "[LPC] Basalt Column Caverns"
+files = [  ]
+licenses = [ ExtResource( 25 ) ]
+authors = [ ExtResource( 29 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-basalt-column-caverns" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 6 )
+title = "ZRPG Tiles"
+files = [  ]
+licenses = [ ExtResource( 28 ), ExtResource( 25 ) ]
+authors = [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 30 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/zrpg-tiles" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 6 )
+title = "RPG Tiles: Cobble stone paths & town objects"
+files = [  ]
+licenses = [ ExtResource( 25 ) ]
+authors = [ ExtResource( 32 ), ExtResource( 35 ), ExtResource( 31 ), ExtResource( 26 ), ExtResource( 36 ), ExtResource( 37 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 6 )
+title = "2d Lost Garden Zelda style tiles resized to 32x32 with additions"
+files = [  ]
+licenses = [ ExtResource( 23 ) ]
+authors = [ ExtResource( 38 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 37 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/2d-lost-garden-zelda-style-tiles-resized-to-32x32-with-additions" )
+notes = ""
+additional_notes = "Credit goes to Daniel Cook's 2d Circle Graphic Archive, Jetrel's mockups resized 32x32, Bertram's improvements, Zabin's modification and additions, Saphy (TMW) tall grass and please provide a link back to OGA and this submission."
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 6 )
+title = "32x32 (and 16x16) RPG Tiles--Forest and some Interior Tiles"
+files = [  ]
+licenses = [ ExtResource( 23 ) ]
+authors = [ ExtResource( 36 ), ExtResource( 41 ) ]
+commissioners = [ ExtResource( 39 ) ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/32x32-and-16x16-rpg-tiles-forest-and-some-interior-tiles" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 6 )
+title = "16x16 Game Assets"
+files = [  ]
+licenses = [ ExtResource( 40 ) ]
+authors = [ ExtResource( 42 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/16x16-game-assets" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 6 )
+title = "RPG Terrains"
+files = [  ]
+licenses = [ ExtResource( 25 ) ]
+authors = [ ExtResource( 43 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/rpg-terrains" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 6 )
+title = "Outdoor 32x32 tileset"
+files = [  ]
+licenses = [ ExtResource( 44 ) ]
+authors = [ ExtResource( 45 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/outdoor-32x32-tileset" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 6 )
+title = "ground.png"
+files = [  ]
+licenses = [ ExtResource( 25 ) ]
+authors = [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 50 ) ]
+commissioners = [  ]
+other_contributors = [ ExtResource( 49 ) ]
+download_url = ""
+sources = PoolStringArray( "https://gitlab.com/evol/clientdata/-/blob/master/graphics/tilesets/ground.png" )
+notes = "Evol Online (https://evolonline.org/)"
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 6 )
+title = "Tileset and Characters - Unfinished"
+files = [  ]
+licenses = [ ExtResource( 44 ) ]
+authors = [ ExtResource( 51 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/tileset-and-characters-unfinished" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 6 )
+title = "[LPC] Mountains"
+files = [ ExtResource( 8 ), ExtResource( 17 ), ExtResource( 3 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 22 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 2 ), ExtResource( 10 ), ExtResource( 20 ), ExtResource( 21 ) ]
+licenses = [ ExtResource( 28 ), ExtResource( 25 ) ]
+authors = [ ExtResource( 24 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-mountains" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 8 ) ]

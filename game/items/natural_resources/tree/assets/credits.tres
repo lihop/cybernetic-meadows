@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/sfx_credit.gd" type="Script" id=2]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=3]
+[ext_resource path="res://items/natural_resources/tree/assets/521458__matislav__small-wooden-piece-chop-012.wav" type="AudioStream" id=4]
+[ext_resource path="res://credits/people/matislav.tres" type="Resource" id=5]
+[ext_resource path="res://items/natural_resources/tree/assets/521466__matislav__small-wooden-piece-chop-018.wav" type="AudioStream" id=6]
+[ext_resource path="res://items/natural_resources/tree/assets/521460__matislav__small-wooden-piece-chop-010.wav" type="AudioStream" id=7]
+[ext_resource path="res://items/natural_resources/tree/assets/521461__matislav__small-wooden-piece-chop-017.wav" type="AudioStream" id=8]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "Wood chopping/throwing"
+files = [ ExtResource( 4 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ) ]
+licenses = [ ExtResource( 3 ) ]
+authors = [ ExtResource( 5 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://freesound.org/people/Matislav/packs/29372/" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

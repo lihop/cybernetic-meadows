@@ -1,0 +1,72 @@
+[gd_resource type="Resource" load_steps=16 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/music_credit.gd" type="Script" id=2]
+[ext_resource path="res://credits/assets/freesoftwaresong_organ-kalimba.ogg" type="AudioStream" id=3]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=4]
+[ext_resource path="res://credits/assets/Loneload-Free_Software_Song.ogg" type="AudioStream" id=5]
+[ext_resource path="res://credits/people/richard_m_stallman.tres" type="Resource" id=6]
+[ext_resource path="res://credits/people/loneload.tres" type="Resource" id=7]
+[ext_resource path="res://credits/people/vaba.tres" type="Resource" id=8]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=9]
+[ext_resource path="res://credits/assets/markushaist-free-software-song.ogg" type="AudioStream" id=10]
+[ext_resource path="res://addons/godot_credits/licenses/WTFPL.tres" type="Resource" id=11]
+[ext_resource path="res://credits/people/markus_haist.tres" type="Resource" id=12]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "Free Software Song (Kalimba Version)"
+files = [ ExtResource( 3 ) ]
+licenses = [ ExtResource( 11 ) ]
+authors = [  ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://anonfile.com/93uaA2j5b1/freesoftwaresong_organ-kalimba_ogg" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+writers = [  ]
+composers = [  ]
+lyricists = [  ]
+performers = [ ExtResource( 8 ) ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+title = "Free Software Song (Rock Version)"
+files = [ ExtResource( 5 ) ]
+licenses = [ ExtResource( 9 ) ]
+authors = [  ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://web.archive.org/web/20150719082345/http://freesoftwaresong.altervista.org/" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+writers = [  ]
+composers = [  ]
+lyricists = [ ExtResource( 6 ) ]
+performers = [ ExtResource( 7 ) ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+title = "Free Software Song (Improvised Piano Version)"
+files = [ ExtResource( 10 ) ]
+licenses = [ ExtResource( 4 ) ]
+authors = [  ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://www.gnu.org/music/markushaist-free-software-song.ogg" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+writers = [  ]
+composers = [  ]
+lyricists = [  ]
+performers = [ ExtResource( 12 ) ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ]

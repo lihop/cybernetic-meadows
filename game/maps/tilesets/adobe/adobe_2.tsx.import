@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/adobe_2.tsx-218a88165d8f0db5699fcc49a9c4d2c0.res"
+
+[deps]
+
+source_file="res://maps/tilesets/adobe/adobe_2.tsx"
+dest_files=[ "res://.import/adobe_2.tsx-218a88165d8f0db5699fcc49a9c4d2c0.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""

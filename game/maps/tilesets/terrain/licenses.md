@@ -1,0 +1,47 @@
+<!--- Do not modify this file! It was generated from credits.tres --->
+
+### [[LPC] Terrains](https://opengameart.org/content/lpc-terrains)  
+**Authors**: bluecarrot16, [Lanea Zimmerman (Sharm)](https://sharm.itch.io/), Daniel Eddeland (daneeklu), Richard Kettering (Jetrel), Zachariah Husiar (Zabin), Hyptosis, Casper Nilsson, [Buko Studios](http://www.buko-studios.com/), Juan Rodriguez (Nushio), [Peter Lim (ZaPaper)](https://www.rpg-action.com/), billknye, William Thompson (William.Thompsonj), caeles, [Stephen Challener (Redshrike)](https://opengameart.org/users/redshrike), Bertram, [Rayane Félix (RayaneFLX)](https://opengameart.org/users/rayaneflx)  
+**Licenses**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
+**Files**: [terrain_map_v7.png](/game/maps/tilesets/terrain/terrain_map_v7.png), [terrain_map_v7.tsx](/game/maps/tilesets/terrain/terrain_map_v7.tsx)  
+**Derived from**:  
+  - ### [Base Tiles](https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
+    **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+    **Notes**: Distributed as part of 
+Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)  
+  - ### [[LPC] Farming tilesets, magic animations and UI elements](https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements)  
+    **Authors**: Daniel Eddeland (daneeklu)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [ZRPG Tiles](https://opengameart.org/content/zrpg-tiles)  
+    **Authors**: Richard Kettering (Jetrel), Zachariah Husiar (Zabin), Hyptosis, [Lanea Zimmerman (Sharm)](https://sharm.itch.io/), [Open Pixel Project (OPP)](https://www.openpixelproject.com/)  
+    **Licenses**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
+  - ### [LPC C.Nilsson](https://opengameart.org/content/lpc-cnilsson)  
+    **Authors**: Casper Nilsson  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [Frozen Lake [LPC]](https://opengameart.org/content/frozen-lake-lpc)  
+    **Authors**: [Buko Studios](http://www.buko-studios.com/)  
+    **Commissioners**: [PlayCraft (by Peter Lim)](https://apps.apple.com/us/app/playcraft/id1097458476?ls=1)  
+    **Licenses**: [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/legalcode)  
+  - ### [LPC Animated Water and waterfalls](https://opengameart.org/content/lpc-animated-water-and-waterfalls)  
+    **Authors**: [Peter Lim (ZaPaper)](https://www.rpg-action.com/)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
+    **Notes**: Made for the "PlayCraft" RPG game maker (https://apps.apple.com/us/app/playcraft/id1097458476?ls=1)  
+  - ### [LPC More Water Transitions](https://opengameart.org/content/lpc-more-water-transitions)  
+    **Authors**: billknye  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [[LPC] Sand+Rock Alt Colors](https://opengameart.org/content/lpc-sandrock-alt-colors)  
+    **Authors**: Daniel Eddeland (daneeklu)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [[LPC] Colorful Sand + Deep Water!](https://opengameart.org/content/lpc-colorful-sand-deep-water)  
+    **Authors**: Juan Rodriguez (Nushio)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [LPC terrain extension](https://opengameart.org/content/lpc-terrain-extension)  
+    **Authors**: caeles  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+  - ### [RPG Tiles: Cobble stone paths & town objects](https://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects)  
+    **Authors**: Zachariah Husiar (Zabin), Daniel Eddeland (daneeklu), Richard Kettering (Jetrel), Hyptosis, [Stephen Challener (Redshrike)](https://opengameart.org/users/redshrike), Bertram  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
+  - ### [RPG Terrains](https://opengameart.org/content/rpg-terrains)  
+    **Authors**: [Rayane Félix (RayaneFLX)](https://opengameart.org/users/rayaneflx)  
+    **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  

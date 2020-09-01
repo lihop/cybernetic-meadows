@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://ui/in_game/floating_label/assets/521973__kastenfrosch__error.wav" type="AudioStream" id=2]
+[ext_resource path="res://addons/godot_credits/sfx_credit.gd" type="Script" id=3]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=4]
+[ext_resource path="res://credits/people/kastenfrosch.tres" type="Resource" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+title = "Error"
+files = [ ExtResource( 2 ) ]
+licenses = [ ExtResource( 4 ) ]
+authors = [ ExtResource( 5 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://freesound.org/people/Kastenfrosch/sounds/521973/" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

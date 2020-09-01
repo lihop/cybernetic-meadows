@@ -1,4 +1,0 @@
-factory_tileset.png
-Kenney
-CC-0
-https://opengameart.org/content/factory-tileset

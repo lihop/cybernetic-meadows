@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=2]
+[ext_resource path="res://ui/in_game/inventory/assets/hand-20.svg" type="Texture" id=3]
+[ext_resource path="res://credits/people/dripsandcastle.tres" type="Resource" id=4]
+[ext_resource path="res://addons/godot_credits/licenses/CC0-1.0.tres" type="Resource" id=5]
+[ext_resource path="res://ui/in_game/inventory/assets/hand.png" type="Texture" id=6]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "Raised Hand in Silhouette"
+files = [ ExtResource( 3 ), ExtResource( 6 ) ]
+licenses = [ ExtResource( 5 ) ]
+authors = [ ExtResource( 4 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://openclipart.org/detail/167377/raised-hand-in-silhouette" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/tuxs_bazaar.tmx-e7287cdb5c2f20e6258084f2796d8570.scn"
+
+[deps]
+
+source_file="res://maps/tuxs_bazaar.tmx"
+dest_files=[ "res://.import/tuxs_bazaar.tmx-e7287cdb5c2f20e6258084f2796d8570.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=0
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

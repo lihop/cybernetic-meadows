@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/music_credit.gd" type="Script" id=2]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=3]
+[ext_resource path="res://locations/bazaar/assets/mystery_bazaar.ogg" type="AudioStream" id=4]
+[ext_resource path="res://credits/people/kevin_macleod.tres" type="Resource" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "Myster Bazaar"
+files = [ ExtResource( 4 ) ]
+licenses = [ ExtResource( 3 ) ]
+authors = [  ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1700005" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+writers = [  ]
+composers = [ ExtResource( 5 ) ]
+lyricists = [  ]
+performers = [ ExtResource( 5 ) ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

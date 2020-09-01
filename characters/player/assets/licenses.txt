@@ -1,4 +1,0 @@
-spritesheet_characters.svg
-Kenney
-CC-0
-https://www.kenney.nl/assets/topdown-shooter

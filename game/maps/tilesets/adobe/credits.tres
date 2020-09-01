@@ -1,0 +1,47 @@
+[gd_resource type="Resource" load_steps=14 format=2]
+
+[ext_resource path="res://addons/godot_credits/licenses/GPL-2.0-or-later.tres" type="Resource" id=1]
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=2]
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=3]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=4]
+[ext_resource path="res://credits/people/bluecarrot16.tres" type="Resource" id=5]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=6]
+[ext_resource path="res://maps/tilesets/adobe/adobe_2.png" type="Texture" id=7]
+[ext_resource path="res://addons/godot_credits/licenses/OGA-BY-3.0.tres" type="Resource" id=8]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-4.0.tres" type="Resource" id=9]
+[ext_resource path="res://credits/people/william_thompson.tres" type="Resource" id=10]
+[ext_resource path="res://credits/people/sharm.tres" type="Resource" id=11]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+title = "[LPC] Adobe Building Set"
+files = [  ]
+licenses = [ ExtResource( 9 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 8 ) ]
+authors = [ ExtResource( 11 ) ]
+commissioners = [ ExtResource( 10 ) ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-adobe-building-set" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+title = "[LPC] Adobe Town Set"
+files = [ ExtResource( 7 ) ]
+licenses = [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 8 ) ]
+authors = [ ExtResource( 5 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+download_url = ""
+sources = PoolStringArray( "https://opengameart.org/content/lpc-adobe-town-set" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ SubResource( 2 ) ]
+
+[resource]
+script = ExtResource( 2 )
+credits = [ SubResource( 1 ) ]

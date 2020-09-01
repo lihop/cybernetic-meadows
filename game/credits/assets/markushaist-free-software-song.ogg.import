@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/markushaist-free-software-song.ogg-596622cf2ad05161f6d6b45454694682.oggstr"
+
+[deps]
+
+source_file="res://credits/assets/markushaist-free-software-song.ogg"
+dest_files=[ "res://.import/markushaist-free-software-song.ogg-596622cf2ad05161f6d6b45454694682.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
