@@ -5,11 +5,10 @@
 **Licenses**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
 **Files**: [terrain_map_v7.png](/game/maps/tilesets/terrain/terrain_map_v7.png), [terrain_map_v7.tsx](/game/maps/tilesets/terrain/terrain_map_v7.tsx)  
 **Derived from**:  
-  - ### [Base Tiles](https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
+  - ### [Base tileset](http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
     **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
     **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
-    **Notes**: Distributed as part of 
-Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)  
+    **Notes**: Distrubuted as part of Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)  
   - ### [[LPC] Farming tilesets, magic animations and UI elements](https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements)  
     **Authors**: Daniel Eddeland (daneeklu)  
     **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  

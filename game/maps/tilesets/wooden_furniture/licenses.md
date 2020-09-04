@@ -5,7 +5,7 @@
 **Licenses**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode), [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
 **Files**: [blonde_wood.png](/game/maps/tilesets/wooden_furniture/blonde_wood.png), [dark_wood.png](/game/maps/tilesets/wooden_furniture/dark_wood.png)  
 **Derived from**:  
-  - ### [Base Tiles (cabinet.png, country.png, victoria.png)](http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
+  - ### [Base tileset](http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)  
     **Authors**: [Lanea Zimmerman (Sharm)](https://sharm.itch.io/)  
     **Licenses**: [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode), [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
     **Notes**: Distrubuted as part of Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)  

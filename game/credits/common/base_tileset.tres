@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=2]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=3]
+[ext_resource path="res://credits/people/sharm.tres" type="Resource" id=4]
+
+[resource]
+script = ExtResource( 1 )
+title = "Base tileset"
+files = [  ]
+licenses = [ ExtResource( 3 ), ExtResource( 2 ) ]
+authors = [ ExtResource( 4 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles" )
+notes = "Distrubuted as part of Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)"
+additional_notes = ""
+license_text = ""
+derived_from = [  ]

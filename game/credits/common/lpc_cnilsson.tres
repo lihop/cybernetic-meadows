@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=2]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=3]
+[ext_resource path="res://credits/people/casper_nilsson.tres" type="Resource" id=4]
+
+[resource]
+script = ExtResource( 1 )
+title = "LPC C.Nilsson"
+files = [  ]
+licenses = [ ExtResource( 3 ), ExtResource( 2 ) ]
+authors = [ ExtResource( 4 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/lpc-cnilsson" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [  ]

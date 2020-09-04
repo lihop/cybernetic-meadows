@@ -26,24 +26,10 @@
 [ext_resource path="res://credits/people/open_pixel_project.tres" type="Resource" id=24]
 [ext_resource path="res://addons/godot_credits/licenses/CC-BY-3.0.tres" type="Resource" id=25]
 [ext_resource path="res://credits/people/play_craft.tres" type="Resource" id=26]
+[ext_resource path="res://credits/common/lpc_cnilsson.tres" type="Resource" id=27]
+[ext_resource path="res://credits/common/base_tileset.tres" type="Resource" id=28]
 
-[sub_resource type="Resource" id=2]
-script = ExtResource( 1 )
-title = "Base Tiles"
-files = [  ]
-licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
-authors = [ ExtResource( 9 ) ]
-commissioners = [  ]
-other_contributors = [  ]
-download_url = ""
-sources = PoolStringArray( "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles" )
-notes = "Distributed as part of 
-Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)"
-additional_notes = ""
-license_text = ""
-derived_from = [  ]
-
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
 title = "[LPC] Farming tilesets, magic animations and UI elements"
 files = [  ]
@@ -51,14 +37,13 @@ licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
 authors = [ ExtResource( 10 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=4]
+[sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
 title = "ZRPG Tiles"
 files = [  ]
@@ -66,29 +51,13 @@ licenses = [ ExtResource( 3 ), ExtResource( 7 ) ]
 authors = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 24 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/zrpg-tiles" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 1 )
-title = "LPC C.Nilsson"
-files = [  ]
-licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
-authors = [ ExtResource( 19 ) ]
-commissioners = [  ]
-other_contributors = [  ]
-download_url = ""
-sources = PoolStringArray( "https://opengameart.org/content/lpc-cnilsson" )
-notes = ""
-additional_notes = ""
-license_text = ""
-derived_from = [  ]
-
-[sub_resource type="Resource" id=6]
+[sub_resource type="Resource" id=3]
 script = ExtResource( 1 )
 title = "Frozen Lake [LPC]"
 files = [  ]
@@ -96,14 +65,13 @@ licenses = [ ExtResource( 25 ) ]
 authors = [ ExtResource( 13 ) ]
 commissioners = [ ExtResource( 26 ) ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/frozen-lake-lpc" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=7]
+[sub_resource type="Resource" id=4]
 script = ExtResource( 1 )
 title = "LPC Animated Water and waterfalls"
 files = [  ]
@@ -111,14 +79,13 @@ licenses = [ ExtResource( 7 ) ]
 authors = [ ExtResource( 17 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-animated-water-and-waterfalls" )
 notes = "Made for the \"PlayCraft\" RPG game maker (https://apps.apple.com/us/app/playcraft/id1097458476?ls=1)"
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=8]
+[sub_resource type="Resource" id=5]
 script = ExtResource( 1 )
 title = "LPC More Water Transitions"
 files = [  ]
@@ -126,14 +93,13 @@ licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
 authors = [ ExtResource( 22 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-more-water-transitions" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=9]
+[sub_resource type="Resource" id=6]
 script = ExtResource( 1 )
 title = "[LPC] Sand+Rock Alt Colors"
 files = [  ]
@@ -141,14 +107,13 @@ licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
 authors = [ ExtResource( 10 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-sandrock-alt-colors" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=10]
+[sub_resource type="Resource" id=7]
 script = ExtResource( 1 )
 title = "[LPC] Colorful Sand + Deep Water!"
 files = [  ]
@@ -156,14 +121,13 @@ licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
 authors = [ ExtResource( 16 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-colorful-sand-deep-water" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=11]
+[sub_resource type="Resource" id=8]
 script = ExtResource( 1 )
 title = "LPC terrain extension"
 files = [  ]
@@ -171,14 +135,13 @@ licenses = [ ExtResource( 7 ), ExtResource( 14 ) ]
 authors = [ ExtResource( 15 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-terrain-extension" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=12]
+[sub_resource type="Resource" id=9]
 script = ExtResource( 1 )
 title = "RPG Tiles: Cobble stone paths & town objects"
 files = [  ]
@@ -186,14 +149,13 @@ licenses = [ ExtResource( 7 ) ]
 authors = [ ExtResource( 12 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 21 ), ExtResource( 23 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=13]
+[sub_resource type="Resource" id=10]
 script = ExtResource( 1 )
 title = "RPG Terrains"
 files = [  ]
@@ -201,14 +163,13 @@ licenses = [ ExtResource( 7 ) ]
 authors = [ ExtResource( 20 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/rpg-terrains" )
 notes = ""
 additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=1]
+[sub_resource type="Resource" id=11]
 script = ExtResource( 1 )
 title = "[LPC] Terrains"
 files = [ ExtResource( 8 ), ExtResource( 4 ) ]
@@ -216,13 +177,12 @@ licenses = [ ExtResource( 3 ), ExtResource( 7 ) ]
 authors = [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 20 ) ]
 commissioners = [  ]
 other_contributors = [  ]
-download_url = ""
 sources = PoolStringArray( "https://opengameart.org/content/lpc-terrains" )
 notes = ""
 additional_notes = ""
 license_text = ""
-derived_from = [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ]
+derived_from = [ ExtResource( 28 ), SubResource( 1 ), SubResource( 2 ), ExtResource( 27 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ]
 
 [resource]
 script = ExtResource( 2 )
-credits = [ SubResource( 1 ) ]
+credits = [ SubResource( 11 ) ]
