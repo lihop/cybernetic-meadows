@@ -22,7 +22,7 @@ func _load_data(path: String) -> void:
 			if dir.current_is_dir() and file_name != "." and file_name != "..":
 				var subdir_path = "%s/%s" % [dir.get_current_dir(), file_name]
 				_load_data(subdir_path)
-			if file_name.ends_with(".res") or file_name.ends_with(".tres"):
+			if file_name.ends_with("recipe.res") or file_name.ends_with("recipe.tres"):
 				var data = load("%s/%s" % [dir.get_current_dir(), file_name])
 				if data is Recipe:
 					# Remove unused ingredient and output slots.
