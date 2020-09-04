@@ -7,5 +7,4 @@ script = ExtResource( 1 )
 name = "Open Pixel Project"
 nickname = "OPP"
 url = "https://www.openpixelproject.com/"
-email = ""
 show_url = false

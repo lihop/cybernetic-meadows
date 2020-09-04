@@ -7,4 +7,4 @@ script = ExtResource( 1 )
 name = "Daniel Armstrong"
 nickname = "HughSpectrum"
 url = ""
-email = ""
+show_url = false

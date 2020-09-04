@@ -7,5 +7,4 @@ script = ExtResource( 1 )
 name = "Buko Studios"
 nickname = ""
 url = "http://www.buko-studios.com/"
-email = ""
 show_url = true
