@@ -1,0 +1,30 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=2]
+[ext_resource path="res://credits/people/bluecarrot16.tres" type="Resource" id=3]
+[ext_resource path="res://maps/tilesets/thatched_roof_cottage/cottage.png" type="Texture" id=4]
+[ext_resource path="res://maps/tilesets/thatched_roof_cottage/thatched_roof.png" type="Texture" id=5]
+[ext_resource path="res://addons/godot_credits/licenses/GPL-3.0-or-later.tres" type="Resource" id=6]
+[ext_resource path="res://addons/godot_credits/licenses/CC-BY-SA-3.0.tres" type="Resource" id=7]
+[ext_resource path="res://credits/common/lpc_cnilsson.tres" type="Resource" id=8]
+[ext_resource path="res://credits/common/base_tileset.tres" type="Resource" id=9]
+[ext_resource path="res://credits/common/castle_work.tres" type="Resource" id=10]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+title = "[LPC] Thatched-roof Cottage"
+files = [ ExtResource( 4 ), ExtResource( 5 ) ]
+licenses = [ ExtResource( 7 ), ExtResource( 6 ) ]
+authors = [ ExtResource( 3 ) ]
+commissioners = [  ]
+other_contributors = [  ]
+sources = PoolStringArray( "https://opengameart.org/content/lpc-thatched-roof-cottage" )
+notes = ""
+additional_notes = ""
+license_text = ""
+derived_from = [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ) ]
+
+[resource]
+script = ExtResource( 1 )
+credits = [ SubResource( 1 ) ]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=19 format=2]
+[gd_resource type="Resource" load_steps=18 format=2]
 
 [ext_resource path="res://addons/godot_credits/credits.gd" type="Script" id=1]
 [ext_resource path="res://addons/godot_credits/art_credit.gd" type="Script" id=2]
@@ -14,23 +14,9 @@
 [ext_resource path="res://credits/people/anamaris.tres" type="Resource" id=12]
 [ext_resource path="res://credits/common/lpc_cnilsson.tres" type="Resource" id=13]
 [ext_resource path="res://credits/common/base_tileset.tres" type="Resource" id=14]
-[ext_resource path="res://credits/people/daniel_cook.tres" type="Resource" id=15]
+[ext_resource path="res://credits/common/castle_work.tres" type="Resource" id=15]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
-title = "Castle work"
-files = [  ]
-licenses = [ ExtResource( 7 ), ExtResource( 5 ) ]
-authors = [ ExtResource( 15 ) ]
-commissioners = [  ]
-other_contributors = [  ]
-sources = PoolStringArray( "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles" )
-notes = "Distributed as part of Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)"
-additional_notes = ""
-license_text = ""
-derived_from = [  ]
-
-[sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 title = "Steampun-a-fy (with concept art)"
 files = [  ]
@@ -44,7 +30,7 @@ additional_notes = ""
 license_text = ""
 derived_from = [  ]
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 title = "[LPC] Windows & Doors"
 files = [ ExtResource( 9 ), ExtResource( 6 ) ]
@@ -56,8 +42,8 @@ sources = PoolStringArray( "https://opengameart.org/content/lpc-windows-doors" )
 notes = ""
 additional_notes = ""
 license_text = ""
-derived_from = [ ExtResource( 14 ), SubResource( 1 ), ExtResource( 13 ), SubResource( 2 ) ]
+derived_from = [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 13 ), SubResource( 1 ) ]
 
 [resource]
 script = ExtResource( 1 )
-credits = [ SubResource( 3 ) ]
+credits = [ SubResource( 2 ) ]

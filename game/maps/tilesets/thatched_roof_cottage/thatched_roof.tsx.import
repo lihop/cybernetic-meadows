@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/thatched_roof.tsx-c06129d23666a79624e6660a6cd23674.res"
+
+[deps]
+
+source_file="res://maps/tilesets/thatched_roof_cottage/thatched_roof.tsx"
+dest_files=[ "res://.import/thatched_roof.tsx-c06129d23666a79624e6660a6cd23674.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""
