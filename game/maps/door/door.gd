@@ -1,11 +1,10 @@
-extends Area2D
+extends Portal
 class_name Door
 
 
 const CURSOR_HAND = preload("res://ui/assets/cursor_grey_hand.png")
 const CURSOR_ARROW = preload("res://ui/assets/cursor_grey_arrow.png")
 
-export(PackedScene) var scene: PackedScene
 export(Vector2) var location: Vector2
 export(bool) var locked := false
 
@@ -16,7 +15,7 @@ func _unhandled_input(event):
 		if locked:
 			$AudioStreamPlayer2D.play()
 		else:
-			get_tree().change_scene_to(scene)
+			teleport(null)
 		
 		get_tree().set_input_as_handled()
 

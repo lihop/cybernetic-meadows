@@ -54,7 +54,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/godot_credits/credits_generator.gd"
 }, {
-"base": "Area2D",
+"base": "Portal",
 "class": "Door",
 "language": "GDScript",
 "path": "res://maps/door/door.gd"
@@ -179,6 +179,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://items/nodes/environment/polluter/polluter.gd"
 }, {
+"base": "Area2D",
+"class": "Portal",
+"language": "GDScript",
+"path": "res://maps/portal/portal.gd"
+}, {
+"base": "Portal",
+"class": "PortalArea",
+"language": "GDScript",
+"path": "res://maps/portal/portal_area.gd"
+}, {
 "base": "Node2D",
 "class": "Purifier",
 "language": "GDScript",
@@ -269,6 +279,8 @@ _global_script_class_icons={
 "Player": "",
 "PlayerCamera": "",
 "Polluter": "",
+"Portal": "",
+"PortalArea": "",
 "Purifier": "",
 "RawMaterial": "",
 "Recipe": "",

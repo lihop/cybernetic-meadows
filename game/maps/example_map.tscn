@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://maps/map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://characters/player/player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://items/mining_drills/burner_mining_drill/burner_mining_drill.tscn" type="PackedScene" id=11]
 [ext_resource path="res://locations/church_of_emacs/buildings/church_exterior.tscn" type="PackedScene" id=12]
 [ext_resource path="res://animals/raku_bug/raku_bug.tscn" type="PackedScene" id=13]
+[ext_resource path="res://maps/door/door.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16 )
@@ -199,4 +200,7 @@ position = Vector2( -208, -64 )
 
 [node name="UI" parent="." index="4" instance=ExtResource( 6 )]
 player_node = NodePath("../Things/Player")
+
+[node name="Door" parent="." index="5" instance=ExtResource( 14 )]
+position = Vector2( -208, -32 )
 [connection signal="body_entered" from="Navigation2D/ToRoot" to="." method="_on_ToRoot_body_entered"]
