@@ -5,6 +5,7 @@ const DATA_PATH = "res://"
 
 var items := []
 var recipe := RecipeData.new()
+var natural_resources := []
 
 
 func _ready():
@@ -32,6 +33,8 @@ func _load_data(path: String) -> void:
 						if data.outputs[i] == null:
 							data.outputs.remove(i)
 					recipe.recipes.append(data)
+				elif data is NaturalResource:
+					natural_resources.append(data)
 			file_name = dir.get_next()
 		
 		dir.list_dir_end()
